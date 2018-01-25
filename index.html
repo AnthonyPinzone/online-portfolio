@@ -10,15 +10,13 @@
 
     <title>Anthony Pinzone | UI Developer</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/ekko-lightbox/ekko-lightbox.css" rel="stylesheet">
 
     <!-- Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Neuton:200,300,400,400i,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
@@ -40,7 +38,7 @@
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+        <i class="filled fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
@@ -65,6 +63,13 @@
 
     <div class="container-fluid p-0">
 
+<!--
+/////////////////////////////////////////
+
+    ABOUT
+
+/////////////////////////////////////////
+-->
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-5 d-none d-lg-block">
@@ -74,8 +79,11 @@
          <!--  <div class="subheading mb-5">265 Heritage Ln · Monroe, NY 10950 · <nobr>(201) 982-4517</nobr> ·
             <a href="mailto:anthonyjpinzone@gmail.com">anthonyjpinzone@gmail.com</a>
           </div> -->
-          <p class="mb-5">
-            I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+          <p class="mb-2 h3">
+            Improving <span class="text-secondary">the web starts with</span> improving <span class="text-secondary">you</span>rself.
+          </p>
+          <p class="mb-5 text-mute">
+            I'm a self-taught UI Developer with a passion for continuous learning. Through online resources and on-the-job training I've become well-versed in responsive design techniques using HTML and CSS, interactive interface development with Javascript and jQuery, server-side templating with Adobe Coldfusion and content management with Wordpress and Drupal.
           </p>
           <ul class="list-inline list-social-icons mb-0 text-center">
             <li class="list-inline-item">
@@ -106,61 +114,328 @@
         </div>
       </section>
 
+<!--
+/////////////////////////////////////////
+
+    EXPERIENCE
+
+/////////////////////////////////////////
+-->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">E<span class="text-primary">xp</span>erience</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+ <!-- CommunityPass -->
+          <article class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">UI Developer</h3>
-              <div class="subheading text-secondary mb-3">CommunityPass.net</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+              <header class="resume-item-header">
+                <h3 class="mb-0">UI Developer</h3>
+                <div class="subheading text-secondary mb-0">Capturepoint / Communitypass</div>
+                <ul class="resume-details list-unstyled mb-3">
+                  <li class="dates-worked">
+                    <i class="fal fa-clock text-tertiary text-icon"></i>
+                    <span class="text-tertiary">September 2015 - Present</span>
+                  </li>
+                  <li class="company-url">
+                    <i class="fal fa-external-link text-tertiary text-icon"></i>
+                    <a class="text-tertiary" target="_blank" href="http://register.communitypass.net">register.communitypass.net</a>
+                  </li>
+                </ul>
+              </header>
+              <section class="resume-item-content">
+                <p class="mb-3 font-italic">
+                  Online recreational management software focused on providing towns, schools and various other organizations a cloud-based tool to streamline events, such as little league sign-ups, town gatherings and college courses.
+                </p>
+                <ul class="mb-3 pl-4">
+                  <li>Redesign the user interface using current web trends and best practices to improve the user experience.</li>
+                  <li>Implementation of new features, such as a sign-up kiosk for recreation facilities and an e-commerce catalog for quicker checkouts.</li>
+                  <li>Utilize Coldfusion, jQuery, JSON and Ajax to build a more interactive interface, including dynamic popups and inline form validation.</li>
+                  <li>Work with custom development clients and their agency teams to develop online savings card utilities from concept to code.</li>
+                  <li>Created and maintain the company style guide and technical snippets for quick building of new pages.</li>
+                </ul>
+              </section>
+              <section class="resume-item-gallery row">
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img rounded">
+                    <a href="images/camping.jpeg" data-toggle="lightbox" data-title="Camping" data-footer="Camping in the beautiful Swiss Alps." data-gallery="commpass">
+                      <img class="figure-img" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    </a>
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img rounded">
+                    <a href="images/grassyhills.jpeg" data-toggle="lightbox" data-title="Grassy Hills" data-footer="I love these rolling grassy hills. I just want to tumble down them!" data-gallery="commpass">
+                      <img class="figure-img" src="images/grassyhills.jpeg" alt="I love these rolling grassy hills. I just want to tumble down them!">
+                    </a>
+                    <figcaption class="figure-caption">Grassy Hills</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img rounded">
+                    <a href="images/woodenwalkway.jpeg" data-toggle="lightbox" data-title="Wooden Walkway" data-footer="I wonder what's down this awesome wooden walkway..." data-gallery="commpass">
+                      <img class="figure-img" src="images/woodenwalkway.jpeg" alt="I wonder what's down this awesome wooden walkway...">
+                    </a>
+                    <figcaption class="figure-caption">Wooden Walkway</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img rounded">
+                    <a href="images/reflectivewater.jpeg" data-toggle="lightbox" data-title="Reflection Pool" data-footer="Will I get this new job?" data-gallery="commpass">
+                      <img class="figure-img" src="images/reflectivewater.jpeg" alt="A beautiful reflection pool in an open air.">
+                    </a>
+                    <figcaption class="figure-caption">Reflection Pool</figcaption>
+                  </figure>
+                </div>
+              </section>
+              <footer class="resume-item-footer">
+                <div class="resume-tags">
+                  <span class="badge badge-pill badge-primary">HTML</span>
+                  <span class="badge badge-pill badge-primary">CSS</span>
+                  <span class="badge badge-pill badge-primary">Javascript</span>
+                  <span class="badge badge-pill badge-primary">jQuery</span>
+                  <span class="badge badge-pill badge-primary">JSON</span>
+                  <span class="badge badge-pill badge-primary">AJAX</span>
+                  <span class="badge badge-pill badge-primary">Coldfusion</span>
+                  <span class="badge badge-pill badge-primary">HTML Email</span>
+                  <span class="badge badge-pill badge-primary">Adobe CC</span>
+                  <span class="badge badge-pill badge-primary">Responsive</span>
+                  <span class="badge badge-pill badge-primary">Design</span>
+                  <span class="badge badge-pill badge-primary">Git</span>
+                </div>
+              </footer>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-tertiary">September 2015 - Present</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+<!-- The Fantasy Authority -->
+          <article class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Podcast Host &amp; Engineer</h3>
-              <div class="subheading text-secondary mb-3">The Fantasy Authority</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              <header class="resume-item-header">
+                <h3 class="mb-0">Podcast Host &amp; Engineer <small class="text-muted">[Unpaid]</small></h3>
+                <div class="subheading text-secondary mb-0">The Fantasy Authority</div>
+                <ul class="resume-details list-unstyled mb-3">
+                  <li class="dates-worked">
+                    <i class="fal fa-clock text-tertiary text-icon"></i>
+                    <span class="text-tertiary">July 2015 - Present</span>
+                  </li>
+                  <li class="company-url">
+                    <i class="fal fa-external-link text-tertiary text-icon"></i>
+                    <a class="text-tertiary" target="_blank" href="http://thefantasyauthority.com/tfa-podcast/">thefantasyauthority.com/tfa-podcast/</a>
+                  </li>
+                </ul>
+              </header>
+              <section class="resume-item-content">
+                <p class="mb-3 font-italic">
+                  Fantasy football advice focused on debate and fan interaction through audio podcasts, video podcasts, written articles and online interaction via Twitter, Facebook, Instagram and Slack.
+                </p>
+                <ul class="mb-3 pl-4">
+                  <li>Create and host a weekly in-season podcast, including major NFL events, like the NFL Draft and Free Agency, live on Youtube using Voicemeeter, Audacity and OBS.</li>
+                  <li>Trained new and current writers on SEO best practices to improve site visits over 100% two years in a row (2015-2016, 2016-2017).</li>
+                  <li>Rebranded the Fantasy Authority and The Fantasy Authority Podcast logos.</li>
+                  <li>Created promotional graphics for use on Twitter, Facebook and Instagram.</li>
+                  <li>Assisted in converting existing site from SquareSpace to Wordpress.</li>
+                  <li>Provide Wordpress support in the form of new plugin implementation, plugin updates, site updates and regular maintenance.</li>
+                </ul>
+              </section>
+              <section class="resume-item-gallery row">
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+              </section>
+              <footer class="resume-item-footer">
+                <div class="resume-tags">
+                  <span class="badge badge-pill badge-primary">Audacity</span>
+                  <span class="badge badge-pill badge-primary">iTunes</span>
+                  <span class="badge badge-pill badge-primary">Premiere Pro</span>
+                  <span class="badge badge-pill badge-primary">Photoshop</span>
+                  <span class="badge badge-pill badge-primary">OBS</span>
+                  <span class="badge badge-pill badge-primary">VoiceMeeter</span>
+                  <span class="badge badge-pill badge-primary">Wordpress</span>
+                  <span class="badge badge-pill badge-primary">SEO</span>
+                  <span class="badge badge-pill badge-primary">Graphic Design</span>
+                </div>
+              </footer>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-tertiary">July 2015 - Present</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+<!-- A&P Tech -->
+          <article class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Front End Designer &amp; Developer</h3>
-              <div class="subheading text-secondary mb-3">The Great Atlantic &amp; Pacific Tea Company (A&amp;P)</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+              <header class="resume-item-header">
+                <h3 class="mb-0">Front End Designer &amp; Developer</h3>
+                <div class="subheading text-secondary mb-0">The Great Atlantic &amp; Pacific Tea Company (A&amp;P)</div>
+                <ul class="resume-details list-unstyled mb-3">
+                  <li class="dates-worked">
+                    <i class="fal fa-clock text-tertiary text-icon"></i>
+                    <span class="text-tertiary">October 2012 - September 2015</span>
+                  </li>
+                  <!-- <li class="company-url">
+                    <i class="fal fa-external-link text-tertiary text-icon"></i>
+                    <a class="text-tertiary" target="_blank" href="http://thefantasyauthority.com/tfa-podcast/">thefantasyauthority.com/tfa-podcast/</a>
+                  </li> -->
+                </ul>
+              </header>
+              <section class="resume-item-content">
+                <p class="mb-3 font-italic">
+                  A pioneer in the supermarket industry, The Great Atlantic &amp; Pacific Tea Company, more commonly known as A&amp;P, built an empire on the backs of self-efficiency, innovation and customer satisfaction.
+                </p>
+                <ul class="mb-3 pl-4">
+                  <li>Planning, design and development of UI/UX utilizing responsive design techniques.</li>
+                  <li>Create graphics and html pages for company's social media platforms, web advertising, web content and e-blasts.</li>
+                  <li>Utlizie Google Analytics and Brightedge to gather, analyze and translate metrics to senior leaders that align with business objectives.</li>
+                  <li>Proactively educate team members and business partners on industry best standards.</li>
+                  <li>Tape and edit internal television program on a monthly basis.</li>
+                  <li>Oversee and coordinate company-wide digital requests.</li>
+                </ul>
+              </section>
+              <section class="resume-item-gallery row">
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+                <div class="gallery-item col col-6 col-md-2">
+                  <figure class="gallery-img">
+                    <img class="figure-img rounded img-fluid" src="images/camping.jpeg" alt="Camping in the beautiful Swiss Alps.">
+                    <figcaption class="figure-caption">Camping</figcaption>
+                  </figure>
+                </div>
+              </section>
+              <footer class="resume-item-footer">
+                <div class="resume-tags">
+                  <span class="badge badge-pill badge-primary">HTML</span>
+                  <span class="badge badge-pill badge-primary">CSS</span>
+                  <span class="badge badge-pill badge-primary">Drupal</span>
+                  <span class="badge badge-pill badge-primary">Responsive</span>
+                  <span class="badge badge-pill badge-primary">Design</span>
+                  <span class="badge badge-pill badge-primary">SEO</span>
+                  <span class="badge badge-pill badge-primary">HTML Email</span>
+                  <span class="badge badge-pill badge-primary">Print Design</span>
+                  <span class="badge badge-pill badge-primary">Premiere Pro</span>
+                  <span class="badge badge-pill badge-primary">Final Cut Pro</span>
+                  <span class="badge badge-pill badge-primary">Photoshop</span>
+                </div>
+              </footer>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-tertiary">October 2012 - September 2015</span>
-            </div>
-          </div>
+          </article>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+<!-- A&P HR -->
+          <article class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Human Resources Manager</h3>
-              <div class="subheading text-secondary mb-3">The Great Atlantic &amp; Pacific Tea Company (A&amp;P)</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+              <header class="resume-item-header">
+                <h3 class="mb-0">Human Resources Manager</h3>
+                <div class="subheading text-secondary mb-0">The Great Atlantic &amp; Pacific Tea Company (A&amp;P)</div>
+                <ul class="resume-details list-unstyled mb-3">
+                  <li class="dates-worked">
+                    <i class="fal fa-clock text-tertiary text-icon"></i>
+                    <span class="text-tertiary">November 2008 - October 2012</span>
+                  </li>
+                  <!-- <li class="company-url">
+                    <i class="fal fa-external-link text-tertiary text-icon"></i>
+                    <a class="text-tertiary" target="_blank" href="http://thefantasyauthority.com/tfa-podcast/">thefantasyauthority.com/tfa-podcast/</a>
+                  </li> -->
+                </ul>
+              </header>
+              <section class="resume-item-content">
+                <ul class="mb-3 pl-4">
+                  <li>Mitigated potential and existing internal issues through coaching sessions, store audits and peer review.</li>
+                  <li>Supported the execution of various communication and training strategies throughout the organization.</li>
+                  <li>Trained management and employees on company processes and guidelines.</li>
+                  <li>Lead all on-boarding activities, including interviewing, hiring and orienting.</li>
+                </ul>
+              </section>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-tertiary">November 2008 - October 2012</span>
-            </div>
-          </div>
+          </article>
 
         </div>
 
       </section>
 
+
+<!--
+/////////////////////////////////////////
+
+    EDUCATION
+
+/////////////////////////////////////////
+-->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5"><span class="text-primary">Edu</span>cation</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Udemy, CodeSchool, Lynda</h3>
+              <div class="subheading text-secondary mb-3">Continuous Learning</div>
+              <ul class="list-unstyled">
+                <li><strong>2018 Course List:</strong></li>
+                <li>- Learn to Program in Javascript: Beginner to Pro</li>
+                <li>- Learn to Code by Making Games (C#, Unity)</li>
+                <li>- Complete Python Bootcamp</li>
+                <li>- Angular 5 - The Complete Guide</li>
+                <li>- Learn and Understand AngularJS</li>
+                <li>- Javascript: Understanding the Weird Parts</li>
+              </ul>
+            </div>
+          </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
@@ -187,70 +462,251 @@
         </div>
       </section>
 
+<!--
+/////////////////////////////////////////
+
+    SKILLS
+
+/////////////////////////////////////////
+-->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5"><span class="text-primary">Skill</span>s</h2>
+          <h2 class="mb-5">S<span class="text-primary">ki</span>lls &amp; <span class="text-primary">T</span>ech</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">HTML &amp; CSS</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Knowledge Seeking</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Communication</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Teamwork</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Responsive Design</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Adaptability</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Photoshop</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Podcasting</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Javascript &amp; jQuery</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Coldfusion</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">AJAX</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">JSON</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Git</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">SEO</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Graphics &amp; Print</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Premiere Pro</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Youtube Creation</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Wordpress</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">Drupal</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+              <div class="col col-12 col-sm-6 rating-container">
+                <span class="label">SASS</span>
+                <div class="rating">
+                  <span class="filled fas fa-star"></span>
+                  <span class="filled fas fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                  <span class="far fa-star"></span>
+                </div>
+              </div>
+            </div><!--//row-->
+          </div><!--//container-->
 
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
         </div>
       </section>
 
+<!--
+/////////////////////////////////////////
+
+    INTERESTS
+
+/////////////////////////////////////////
+-->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Inte<span class="text-primary">rest</span>s</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+
+          <h3 class="mb-0">NFL &amp; Nascar</h3>
+          <p class="mb-3">As you can probably tell from my work with The Fantasy Authority, I'm a big fantasy football fan. I'm an even bigger Miami Dolphins fan though. The Dolphins haven't given me much to cheer for as of late, but my favorite NASCAR driver, Martin Truex Jr., is on fire! I was even lucky enough to see him win a race in person on my trip to the Watkins Glen International speedway during the 2017 season.</p>
+          
+          <h3 class="mb-0">Gaming</h3>
+          <p class="mb-3">I've been into videogames since the days of watching my dad go toe to toe with slime and golems and all sorts of scary beasts in Dragon Warrior for NES. Today you'll often find me engulfed in similar open world role-playing games, like Divinity Original Sin, World of Warcraft, The Elder Scrolls Online and the latest Zelda adventure. Having just gotten a Nintendo Switch for Christmas, it won't be hard to guess which game I'm into right now.</p>
+
+          <h3 class="mb-0">Netflix, Movies</h3>
+          <p class="mb-3">Netflix has become a national phenomenon with their insanely good lineup of original movies and tv shows. When I can't, or don't want to, find anything to watch on the 'flix, you can often find me in the movie theater checking out the latest Sci-Fi movie or Criminal Drama.</p>
+
+          <h3 class="mb-0">Travel</h3>
+          <p class="mb-3">My girlfriend and I love to travel. Our vacations are far from "chill" though, as we'll often do every and any event we can find in the area we are visiting. Over the past 5 years, we stayed at the site of Jim and Pam's wedding from The Office in Niagara Falls, walked through the amazing waterfall steps in Watkins Glen, perused the shops in Bar Harbour, Maine, checked out the sights of our capital (Washington DC) and attended a wedding on the beautiful beaches of Punta Cana (Dominican Republic).</p>
+
+          <h3 class="mb-0">Stock Market</h3>
+          <p class="mb-3">I've always been good with numbers. Finally in October 2017 I decided to join the record-setting stock market and I've been obsessed ever since. Learning the ins and outs of how the market works and digging into big-name companies as possible investments has been truly invigorating.</p>
+
         </div>
       </section>
 
@@ -259,11 +715,12 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/ekko-lightbox/ekko-lightbox.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- Custom scripts -->
     <script src="js/resume.js"></script>
 
   </body>

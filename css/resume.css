@@ -32,24 +32,158 @@ h2 {
   font-size: 3.5rem;
 }
 
+/** Resume Item Header **/
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Saira Extra Condensed', serif;
   font-size: 1.35rem;
 }
+.resume-details:after {
+	clear: both;
+	content: '';
+	display: table; }
 
+.resume-details li {
+  float: left;
+  font-weight: 400;
+  font-size: .75em;
+  padding: 0 15px 0 0;
+  position: relative;
+  text-transform: uppercase; }
+
+  .resume-details li .text-icon {
+  	margin-right: 5px; }
+
+/** Resume Item Gallery **/
+.gallery-item figure {
+  height: 100px;
+  overflow: hidden;
+	position: relative; 
+}
+	.gallery-item figure img {
+    margin: 0;
+	}
+	.gallery-item figure figcaption {
+		font-size: .75rem;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 3px;
+		position: absolute;
+		bottom: 0; left: 0;
+		color: white;
+		background: rgba(0,0,0,.25);
+		width: 100%;
+  }
+
+/** Modal Design **/
+.modal-backdrop.show { opacity: 0.85 }
+
+.modal-content {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.modal-header {
+  padding: 0 1rem;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+  .modal-title {
+    color: #fff;
+    font-size: 2rem;
+  }
+  .modal-header .close {
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+  }
+  .modal-header .close:focus, 
+  .modal-header .close:hover {
+    color: #E9B000;
+    opacity: 1;
+  }
+.ekko-lightbox-nav-overlay {
+  z-index: 1;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: auto;
+  height: auto;
+}
+  .ekko-lightbox-nav-overlay a {
+    flex: 0;
+    font-size: 20px;
+    display: inline;
+    opacity: 1;
+    transition: none;
+  }
+  .ekko-lightbox-nav-overlay a:hover {
+    color: #E9B000;
+  }
+  .ekko-lightbox-nav-overlay a span {
+    padding: 0 15px
+  }
+
+.ekko-lightbox-item img {
+  border: 5px solid rgba(233,176,0, 0.5);
+  border-radius: .25rem;
+}
+
+.modal-footer {
+  -webkit-box-pack: normal;
+  -ms-flex-pack: normal;
+  justify-content: normal;
+  padding: 2rem 1rem;
+  border-top: 0;
+  color: #fff;
+  font-style: italic;
+}
+
+/** Skills Star System **/
+.rating-container {
+  padding-bottom: 5px;
+}
+
+  .rating-container:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+.rating-container .label,
+.rating-container .rating {
+  float: left;
+  width: 50%;
+}
+
+.rating-container .rating {
+  text-align: right;
+}
+
+.rating-container .label {
+  font-weight: 300;
+  font-size: .875rem;
+}
+
+.rating-container .fa-star { color: #dadada; }
+.rating-container .fa-star.filled { color: #E9B000 !important; }
+
+
+/** Social Media Icons **/
 .list-social-icons .list-inline-item:not(:last-child) {
     margin-right: 1.5rem;
 }
 
 .list-social-icons a {
-  color: rgba(233,176,0,.35);
+  color: rgba(0,143,149,.35);
   transition: color 0.5s ease;
 }
 
 .list-social-icons a:hover {
-  color: rgba(233,176,0,1);
+  color: rgba(0,143,149,1);
   transition: color 0.5s ease;
 }
 
@@ -158,11 +292,19 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: #E24242 !important;
 }
+a.text-primary:focus, 
+a.text-primary:hover {
+  color: rgb(170, 50, 50) !important;
+}
 .text-secondary {
   color: #E9B000 !important;
 }
 .text-tertiary {
   color: #008F95 !important;
+}
+
+.badge-primary {
+    background-color: #008F95;
 }
 
 a {
