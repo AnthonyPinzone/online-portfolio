@@ -108,28 +108,6 @@ h2 {
     color: #E9B000;
     opacity: 1;
   }
-/*.ekko-lightbox-nav-overlay {
-  z-index: 1;
-  top: 105%;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  width: auto;
-  height: auto;
-}
-  .ekko-lightbox-nav-overlay a {
-    flex: 0;
-    font-size: 20px;
-    display: inline;
-    opacity: 1;
-    transition: none;
-  }
-  .ekko-lightbox-nav-overlay a:hover {
-    color: #E9B000;
-  }
-  .ekko-lightbox-nav-overlay a span {
-    padding: 0 15px
-  }*/
 
 .ekko-lightbox-item img {
   border: 5px solid rgba(233,176,0, 0.5);
@@ -296,12 +274,17 @@ section.resume-section .resume-item .resume-date {
 .text-primary {
   color: #E24242 !important;
 }
-a.text-primary:focus, 
+a.text-primary:focus,
 a.text-primary:hover {
   color: rgb(170, 50, 50) !important;
 }
 .text-secondary {
   color: #E9B000 !important;
+}
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: rgb(255, 214, 91) !important;
+  cursor: pointer;
 }
 .text-tertiary {
   color: #008F95 !important;
@@ -311,10 +294,12 @@ a.text-primary:hover {
     background-color: #008F95;
 }
 
-a {
-  color: #E9B000;
-}
+a { color: #E9B000; }
 
-a:hover, a:focus, a:active {
-  color: #783F00;
+a:hover, a:focus, a:active { color: rgb(255, 214, 91); }
+
+@media print {
+  section.resume-section { min-height: 0 !important; }
+  #about h1 { display: block !important; }
+  .my-auto { margin: 0 !important; }
 }
