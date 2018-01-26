@@ -57,7 +57,7 @@ h2 {
 
 /** Resume Item Gallery **/
 .gallery-item figure {
-  height: 100px;
+  border: 1px solid #eaeaea;
   overflow: hidden;
 	position: relative; 
 }
@@ -72,9 +72,13 @@ h2 {
 		position: absolute;
 		bottom: 0; left: 0;
 		color: white;
-		background: rgba(0,0,0,.25);
+		background: rgba(0,0,0,.65);
 		width: 100%;
   }
+
+@media screen and (min-width: 992px) {
+  .resume-item-gallery { max-width: 1200px; }
+}
 
 /** Modal Design **/
 .modal-backdrop.show { opacity: 0.85 }
@@ -104,7 +108,7 @@ h2 {
     color: #E9B000;
     opacity: 1;
   }
-.ekko-lightbox-nav-overlay {
+/*.ekko-lightbox-nav-overlay {
   z-index: 1;
   top: 105%;
   left: 50%;
@@ -125,7 +129,7 @@ h2 {
   }
   .ekko-lightbox-nav-overlay a span {
     padding: 0 15px
-  }
+  }*/
 
 .ekko-lightbox-item img {
   border: 5px solid rgba(233,176,0, 0.5);
