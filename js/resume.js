@@ -31,4 +31,15 @@
     $(this).ekkoLightbox();
   });
 
+  // On Print, open PDF in new tab
+  $(window).print(function(e){
+    e.preventDefault();
+    var win = window.open('http://www.anthonypinzone.online/docs/resume_print.pdf', '_blank');
+    if (win) {
+      win.focus();
+    } else {
+      alert('Please allow popups for this website');
+    }
+  });
+
 })(jQuery); // End of use strict
