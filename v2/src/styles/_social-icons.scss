@@ -1,0 +1,22 @@
+/** Social Media Icons **/
+.social-icons {
+	.list-inline-item {
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+	}
+
+	a {
+		color: rgba(0, 143, 149, 0.35);
+		transition: color 0.5s ease;
+
+		&:hover {
+			color: rgba(0, 143, 149, 1);
+			transition: color 0.5s ease;
+		}
+
+		.fa-fw {
+			font-size: 1.75rem;
+		}
+	}
+}

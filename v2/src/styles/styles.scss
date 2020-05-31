@@ -1,0 +1,29 @@
+// Custom Fonts, Variables, Mixins, Functions
+// @import "fonts";
+// @import "variables";
+// @import "functions";
+// @import "mixins";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/utilities";
+
+// Custom CSS
+@import "custom";
+@import "nav";
+@import "social-icons";
+// @import "base";
+// @import "header";
+// @import "content";
+// @import "isi";
+// @import "footer";

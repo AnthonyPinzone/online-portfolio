@@ -1,0 +1,137 @@
+[
+	{
+		"title": "Freelance Frontend Developer",
+		"company": {
+			"name": "Craft World Wide",
+			"location": "Parsippany, NJ",
+			"website": {
+				"displayName": "craftww.com",
+				"url": "https://www.craftww.com"
+			},
+			"description": "A creative production business specializing in content creation, digital, print, broadcast and transcreation."
+		},
+		"datesWorked": ["June 2019 - January 2020", "March 2020", "May 2020"],
+		"jobDetails": [
+			"<strong>Cablivi Visopedia:</strong> Developed a fully-animated interactive touch-screen display using React and GSAP.",
+			"Collaborated with the McCann Health NJ design agency to develop redesigned mobile and desktop displays using HTML5, CSS3, SASS, Javascript (ES6), Bootstrap, Handlebars, and YAML.",
+			"Prepared and developed animated HTML web banners for implementation into Google Studios Doubleclick. Javascript Features: GSAP animation, Doubleclick tracking."
+		],
+		"tags": [
+			"HTML5",
+			"CSS3",
+			"SASS",
+			"JavaScript",
+			"Handlebars",
+			"JSON",
+			"YAML",
+			"ReactJS",
+			"Responsive",
+			"Adobe CC",
+			"Git",
+			"Jira"
+		]
+	},
+	{
+		"title": "Frontend Developer",
+		"company": {
+			"name": "GeekHive",
+			"dept": "UI/UX Practice",
+			"location": "Warwick, NY",
+			"website": {
+				"displayName": "geekhive.com",
+				"url": "http://www.geekhive.com"
+			},
+			"description": "A marketing technology (martech) consultancy and digital transformation partner."
+		},
+		"datesWorked": "March 2018 - April 2019",
+		"jobDetails": [
+			"<strong>Your Hearing Network:</strong> Developed a business management web application for audiologists using React and Typescript. Features: User roles, digital commerce, service opt-in, and reporting.",
+			"<strong>American Society of Hematology:</strong> Developed a new annual report on Drupal and collaborated with UI Designer to improve the engagement using animation (CSS Animate, ScrollMagic, and GSAP).",
+			"Collaborated with UI & UX Designer to convert static designs to dynamic and responsive web pages using HTML5, CSS3, SASS, and Javascript (ES6).",
+			"Applied A11Y accessibility standards to support an inclusive design methodology.",
+			"Interviewed, hired, and mentored frontend interns."
+		],
+		"tags": [
+			"HTML5",
+			"CSS3",
+			"SASS",
+			"Javascript",
+			"jQuery",
+			"JSON",
+			"ReactJS",
+			"Typescript",
+			"VueJS",
+			"Nunjucks",
+			"Responsive",
+			"Adobe CC",
+			"Git",
+			"A11Y",
+			"Invision",
+			"Zeplin",
+			"Jira"
+		]
+	},
+	{
+		"title": "UI Developer",
+		"company": {
+			"name": "Capturepoint / Communitypass",
+			"location": "Warwick, NY",
+			"website": {
+				"displayName": "register.communitypass.net",
+				"url": "http://register.communitypass.net"
+			},
+			"description": "A cloud-based web application providing towns, schools, and other organizations a way to streamline events."
+		},
+		"datesWorked": "September 2015 - March 2018",
+		"jobDetails": [
+			"Coded desktop design comps into a fully-responsive web application and conceptualized layouts for mobile devices.",
+			"Collaborated with the Director of Product to research and implement best UI and UX practices, resulting in improved information architecture, navigation, and usability.",
+			"Lead the design and development of a sign-up kiosk for recreation facilities requiring display on different touch-screen sizes. Resulted in increased audience participation. Utilized Coldfusion, jQuery, JSON, Ajax.",
+			"Developed an e-commerce platform for event registration that included search, filtering, and user feedback, resulting in quicker checkouts. Utilized Coldfusion, jQuery, JSON, Ajax.",
+			"Worked with pharma clients to develop drug sample request forms with validation and user feedback. Utilized Javascript, jQuery.",
+			"Established and maintained a digital style guide resulting in a library of reusable UI components and more efficient page building."
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Javascript",
+			"jQuery",
+			"JSON",
+			"AJAX",
+			"Coldfusion",
+			"HTML Email",
+			"Adobe CC",
+			"Responsive",
+			"Design",
+			"Git"
+		]
+	},
+	{
+		"title": "Front End Designer &amp; Developer",
+		"company": {
+			"name": "The Great Atlantic & Pacific Tea Company (A&P)",
+			"description": "A pioneer in the supermarket industry built on the backs of self-efficiency, innovation, and customer satisfaction."
+		},
+		"datesWorked": "October 2012 - September 2015",
+		"jobDetails": [
+			"Played a key role in upgrading the existing static HTML website to a custom Drupal theme.",
+			"Implemented responsive design techniques, increasing mobile traffic by 150%.",
+			"Designed landing pages, HTML emails, digital banner ads, and social media graphics.",
+			"Trained team members and business partners on SEO, UX, and UI best practices.",
+			"Analyzed and reported metrics from Google Analytics and Brightedge to senior leadership.",
+			"Shot and edited monthly internal video content using Final Cut Pro, Premiere Pro, and Audacity."
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Drupal",
+			"Responsive Design",
+			"SEO",
+			"HTML Email",
+			"Print Design",
+			"Premiere Pro",
+			"Final Cut Pro",
+			"Photoshop"
+		]
+	}
+]
