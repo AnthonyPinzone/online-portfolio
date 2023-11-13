@@ -23,17 +23,15 @@ function App() {
   }, []);
 
   return (
-    <>
-      <DataContext.Provider value={data}>
-        <ThemeContext.Provider value={{ theme, setTheme }}>
-          <Layout>
-            <Intro />
-            <Projects />
-            <Experience />
-          </Layout>
-        </ThemeContext.Provider>
-      </DataContext.Provider>
-    </>
+    <DataContext.Provider value={data}>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <Layout>
+          <Intro />
+          <Projects />
+          <Experience />
+        </Layout>
+      </ThemeContext.Provider>
+    </DataContext.Provider>
   );
 }
 
