@@ -1,0 +1,24 @@
+.darkmode-toggle {
+  align-self: center;
+  background: transparent;
+  border: 0;
+  border-radius: 9999px;
+  box-shadow: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--large-font-size);
+  height: 35px;
+  margin-left: auto;
+  outline: 0;
+  width: 35px;
+  transition: 0.15s linear;
+
+  &:focus,
+  &:focus-visible,
+  &:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+  }
+}
