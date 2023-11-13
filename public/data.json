@@ -1,0 +1,118 @@
+{
+  "projects": [
+    {
+      "name": "Corbion",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["html", "sass", "react", "typescript"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": "https://www.corbion.com"
+    },
+    {
+      "name": "Buckeye Broadband",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["sass", "react native", "typescript"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": ""
+    },
+    {
+      "name": "Your Hearing Network",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["html", "sass", "react", "typescript"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": ""
+    },
+    {
+      "name": "American Society of Hematology",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["html", "sass", "react", "typescript"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": ""
+    },
+    {
+      "name": "Cablivi Visopedia",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["html", "sass", "nextjs"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": ""
+    },
+    {
+      "name": "CommunityPass",
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
+      "skills": ["html", "sass", "jquery"],
+      "images": [],
+      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
+      "url": ""
+    }
+  ],
+  "experience": [
+    {
+      "company": "Pursuit",
+      "position": "Fullstack Instructor",
+      "startDate": "Nov 2022",
+      "endDate": "Present",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "GeekHive",
+      "position": "Development Manager",
+      "startDate": "Dec 2021",
+      "endDate": "Sep 2022",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "GeekHive",
+      "position": "Frontend Developer",
+      "startDate": "Sep 2020",
+      "endDate": "Dec 2021",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "Craft World Wide",
+      "position": "Frontend Developer",
+      "startDate": "Jun 2019",
+      "endDate": "Sep 2020",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "GeekHive",
+      "position": "Frontend Developer",
+      "startDate": "Mar 2018",
+      "endDate": "Apr 2019",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "Capturepoint",
+      "position": "UI Developer",
+      "startDate": "Sep 2015",
+      "endDate": "Mar 2018",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "A&P",
+      "position": "Media Specialist",
+      "startDate": "Oct 2012",
+      "endDate": "Sep 2015",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    },
+    {
+      "company": "A&P",
+      "position": "Human Resources",
+      "startDate": "Nov 2008",
+      "endDate": "Oct 2012",
+      "skills": [],
+      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+    }
+  ]
+}
