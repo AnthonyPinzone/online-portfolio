@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ThemeContext, DataContext } from "./common/contexts";
 import { PageLayout as Layout } from "./layout";
-import { Intro, Work, Experience } from "./components";
+import { Intro, Projects, Experience } from "./components";
 import "./App.scss";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         <ThemeContext.Provider value={{ theme, setTheme }}>
           <Layout>
             <Intro />
-            <Work />
+            <Projects />
             <Experience />
           </Layout>
         </ThemeContext.Provider>
