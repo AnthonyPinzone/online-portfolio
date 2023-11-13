@@ -1,0 +1,177 @@
+@use "assets/sass" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  color: var(--primary-blue);
+  font-family: var(--sans-serif-font-family);
+  font-size: var(--default-font-size);
+  line-height: var(--default-line-height);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif-font-family);
+  font-weight: normal;
+  line-height: var(--heading-line-height);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--heading-1-font-size);
+}
+
+h2 {
+  font-size: var(--heading-2-font-size);
+}
+
+h3 {
+  font-size: var(--heading-3-font-size);
+}
+
+h4 {
+  font-size: var(--heading-4-font-size);
+}
+
+h5 {
+  font-size: var(--heading-5-font-size);
+}
+
+h6 {
+  font-size: var(--heading-6-font-size);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--border-radius-small);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans-serif-font-family);
+  font-size: var(--default-font-size);
+  outline: 0;
+  padding: 0;
+  transition: 0.25s linear;
+
+  &:focus,
+  &:focus-visible,
+  &:hover {
+    background-color: var(--white-200);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.button {
+  &--yellow {
+    background-color: var(--primary-yellow);
+    color: var(--primary-blue);
+    padding: 0.5rem 1rem;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      background-color: var(--secondary-red);
+      color: var(--white);
+    }
+  }
+}
+
+.em,
+em {
+  font-family: var(--serif-font-family);
+  font-style: italic;
+}
+
+.bold,
+bold {
+  font-weight: 600;
+}
+
+.mono {
+  font-family: var(--monospace-font-family);
+  letter-spacing: -1px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  border: 0;
+  border-radius: var(--border-radius-small);
+  display: block;
+  font-family: var(--sans-serif-font-family);
+  font-size: var(--small-font-size);
+  outline: 0;
+  padding: 0.5rem 1rem;
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: 0 0 0 2px var(--primary-blue);
+  }
+}
+
+label {
+  display: block;
+  font-family: var(--sans-serif-font-family);
+  font-size: var(--small-font-size);
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

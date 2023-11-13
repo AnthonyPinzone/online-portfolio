@@ -1,0 +1,90 @@
+@use "functions";
+
+// Font Sizes
+$default-font-size: functions.rem(16px);
+$small-font-size: functions.rem(14px);
+$smaller-font-size: functions.rem(12px);
+$smallest-font-size: functions.rem(10px);
+$large-font-size: functions.rem(18px);
+$larger-font-size: functions.rem(20px);
+$largest-font-size: functions.rem(24px);
+$logo-font-size: functions.rem(30px);
+$title-font-size: functions.rem(55px);
+$heading-1-font-size: functions.rem(48px);
+$heading-2-font-size: functions.rem(36px);
+$heading-3-font-size: functions.rem(24px);
+$heading-4-font-size: functions.rem(20px);
+$heading-5-font-size: functions.rem(18px);
+$heading-6-font-size: functions.rem(16px);
+
+// Breakpoints
+$breakpoint-phone: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1280px;
+
+// Container Sizes
+$container-phone: 100%;
+$container-tablet: 600px;
+$container-laptop: 800px;
+$container-desktop: 1000px;
+$container-widescreen: 1200px;
+
+:root {
+  --default-font-size: #{$default-font-size};
+  --small-font-size: #{$small-font-size};
+  --smaller-font-size: #{$smaller-font-size};
+  --smallest-font-size: #{$smallest-font-size};
+  --large-font-size: #{$large-font-size};
+  --larger-font-size: #{$larger-font-size};
+  --largest-font-size: #{$largest-font-size};
+  --logo-font-size: #{$logo-font-size};
+  --title-font-size: #{$title-font-size};
+  --heading-1-font-size: #{$heading-1-font-size};
+  --heading-2-font-size: #{$heading-2-font-size};
+  --heading-3-font-size: #{$heading-3-font-size};
+  --heading-4-font-size: #{$heading-4-font-size};
+  --heading-5-font-size: #{$heading-5-font-size};
+  --heading-6-font-size: #{$heading-6-font-size};
+
+  --default-line-height: 1.5;
+  --heading-line-height: 1.2;
+  --double-line-height: 2;
+
+  --border-radius-small: 5px;
+  --border-radius-medium: 10px;
+  --border-radius-large: 15px;
+  --border-radius-circle: 50%;
+
+  --sans-serif-font-family: "Libre Franklin", sans-serif;
+  --serif-font-family: "Libre Baskerville", serif;
+  --monospace-font-family: "Fira Code", monospace;
+
+  --primary-yellow: #ffde59;
+  --primary-blue: #12263a;
+  --secondary-red: #a63446;
+  --secondary-blue: #009fb7;
+  --secondary-green: #136f63;
+
+  --white: #fff;
+  --white-100: #f8f9fa;
+  --white-200: #e9ecef;
+  --white-300: #dee2e6;
+  --white-400: #ced4da;
+  --white-500: #adb5bd;
+
+  --black: #000;
+  --black-100: #1a1a1a;
+  --black-200: #212529;
+  --black-300: #343a40;
+  --black-400: #495057;
+  --black-500: #6c757d;
+
+  --html-logo-color: #e34f26;
+  --css-logo-color: #264de4;
+  --sass-logo-color: #c69;
+  --js-logo-color: #f0db4f;
+  --jquery-logo-color: #0769ad;
+  --react-logo-color: #61dafb;
+  --typescript-logo-color: #007acc;
+}

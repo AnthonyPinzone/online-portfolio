@@ -1,0 +1,6 @@
+@use "functions";
+
+@mixin fontSize($size) {
+  font-size: $size;
+  font-size: functions.rem($size);
+}
