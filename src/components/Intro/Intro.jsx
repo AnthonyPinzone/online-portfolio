@@ -1,4 +1,5 @@
 import React from "react";
+import { Container } from "../../layout";
 import { FaCodepen, FaGithub, FaLinkedin } from "react-icons/fa";
 import profilePhoto from "../../assets/images/anthony-pinzone-profile-photo-cropped.jpg";
 import "./Intro.scss";
@@ -6,7 +7,7 @@ import "./Intro.scss";
 export function Intro() {
   return (
     <section className='intro'>
-      <div className='container intro__container'>
+      <Container className='intro__container'>
         <div className='intro-details'>
           <p className='intro-details__title'>Hi! I'm Anthony</p>
           <p className='intro-details__paragraph'>
@@ -48,7 +49,7 @@ export function Intro() {
             alt='Anthony standing on a boat overlooking the Hudson River in New York City'
           />
         </figure>
-      </div>
+      </Container>
     </section>
   );
 }
