@@ -1,0 +1,50 @@
+.header {
+  background-color: var(--primary-yellow);
+
+  &__container {
+    --container-vertical-padding: 20px;
+    align-items: baseline;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__title {
+    font-size: var(--logo-font-size);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-link {
+      color: var(--primary-blue);
+      font-size: var(--small-font-size);
+      outline: 0;
+      text-decoration: none;
+
+      &:after {
+        background-color: var(--primary-blue);
+        content: "";
+        display: block;
+        height: 1px;
+        width: 0;
+        transition: 0.25s linear;
+      }
+
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

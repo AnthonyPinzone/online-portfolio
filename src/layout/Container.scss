@@ -1,0 +1,28 @@
+@use "../assets/sass/variables" as *;
+
+.container {
+  --container-width: #{$container-widescreen};
+  --container-vertical-padding: 40px;
+  --container-horizontal-padding: 0;
+
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+
+  @media (max-width: $breakpoint-desktop) {
+    --container-width: #{$container-desktop};
+  }
+
+  @media (max-width: $breakpoint-laptop) {
+    --container-width: #{$container-laptop};
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    --container-width: #{$container-tablet};
+    --container-vertical-padding: 20px;
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    --container-width: #{$container-phone};
+  }
+}
