@@ -1,4 +1,4 @@
-import { Container } from './';
+import { Container } from '../Container';
 import { BsArrowUpRight, BsFillSendFill, BsPersonVcard } from 'react-icons/bs';
 import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';

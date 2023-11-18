@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import Header from './PageHeader';
-import Footer from './PageFooter';
+import Header from '../PageHeader';
+import Footer from '../PageFooter';
 
 export function PageLayout({ children }) {
   return (

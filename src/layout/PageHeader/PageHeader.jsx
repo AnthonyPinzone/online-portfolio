@@ -1,5 +1,5 @@
-import { Container } from './';
-import { DarkModeToggle } from '../components';
+import { Container } from '../Container';
+import { DarkModeToggle } from '../../components';
 import './PageHeader.scss';
 
 export default function Header() {
