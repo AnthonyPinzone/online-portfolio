@@ -1,4 +1,4 @@
-@use "functions";
+@use 'functions';
 
 // Font Sizes
 $default-font-size: functions.rem(16px);
@@ -56,9 +56,9 @@ $container-widescreen: 1200px;
   --border-radius-large: 15px;
   --border-radius-circle: 50%;
 
-  --sans-serif-font-family: "Libre Franklin", sans-serif;
-  --serif-font-family: "Libre Baskerville", serif;
-  --monospace-font-family: "Fira Code", monospace;
+  --sans-serif-font-family: 'Libre Franklin', sans-serif;
+  --serif-font-family: 'Libre Baskerville', serif;
+  --monospace-font-family: 'Fira Code', monospace;
 
   --primary-yellow: #ffde59;
   --primary-blue: #12263a;

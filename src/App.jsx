@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react";
-import { ThemeContext, DataContext } from "./common/contexts";
-import { PageLayout as Layout } from "./layout";
-import { Intro, Projects, Experience } from "./components";
-import "./App.scss";
+import { useEffect, useState } from 'react';
+import { ThemeContext, DataContext } from './common/contexts';
+import { PageLayout as Layout } from './layout';
+import { Intro, Projects, Experience } from './components';
+import './App.scss';
 
 function App() {
   const [data, setData] = useState(null);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState('light');
 
   const getData = async () => {
     try {
-      const response = await fetch("data.json");
+      const response = await fetch('data.json');
       const data = await response.json();
       setData(data);
     } catch (error) {
-      console.log("There was an issue fetching the data.", error);
+      console.log('There was an issue fetching the data.', error);
     }
   };
 
