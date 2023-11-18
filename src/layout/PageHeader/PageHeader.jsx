@@ -1,4 +1,4 @@
-import { Container } from '../Container';
+import { Container } from '../';
 import { DarkModeToggle } from '../../components';
 import './PageHeader.scss';
 
@@ -25,8 +25,8 @@ export default function Header() {
               </a>
             </li>
           </ul>
+          <DarkModeToggle />
         </nav>
-        <DarkModeToggle />
       </Container>
     </header>
   );
