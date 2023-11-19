@@ -18,7 +18,7 @@ export function Projects() {
   if (!data) return null;
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <Container className="projects__container">
         <h2 className="projects__title">What I've Worked On</h2>
         <ul className="projects__gallery">

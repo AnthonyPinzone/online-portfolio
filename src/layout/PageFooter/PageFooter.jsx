@@ -1,4 +1,4 @@
-import { Container } from '../';
+import { Container } from '../Container/Container';
 import { BsArrowUpRight, BsFillSendFill, BsPersonVcard } from 'react-icons/bs';
 import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';
@@ -6,7 +6,7 @@ import './PageFooter.scss';
 
 export default function PageFooter() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <Container className="footer__container">
         <div className="footer__links">
           <h5>Explore Some More</h5>

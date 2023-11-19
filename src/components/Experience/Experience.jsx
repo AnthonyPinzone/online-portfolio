@@ -9,10 +9,10 @@ export function Experience() {
   if (!data) return null;
 
   return (
-    <section className="experience">
+    <section id="experience" className="experience">
       <Container className="experience__container">
         <header className="experience__header">
-          <h2 className="experience__title">Where I've Been</h2>
+          <h2 className="experience__title">Where I&apos;ve Been</h2>
           <div className="experience__timeline-controls">
             <button className="experience__button">
               <AiOutlineLeft /> Prev
