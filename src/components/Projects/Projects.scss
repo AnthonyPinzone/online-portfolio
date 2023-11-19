@@ -48,7 +48,7 @@
       svg {
         cursor: pointer;
         filter: grayscale(1);
-        transition: 0.25s linear;
+        transition: var(--transition-duration-minimal) linear;
 
         &:focus,
         &:focus-visible,
@@ -71,7 +71,7 @@
       margin: auto 0 0;
       padding: 0.5rem 1rem;
       text-decoration: none;
-      transition: 0.25s linear;
+      transition: var(--transition-duration-minimal) linear;
 
       &:focus,
       &:focus-visible,

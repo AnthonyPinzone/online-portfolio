@@ -44,7 +44,7 @@
       position: relative;
       scroll-snap-align: center;
       scroll-snap-stop: always;
-      transition: background-color 0.25s linear;
+      transition: background-color var(--transition-duration-minimal) linear;
 
       &:focus,
       &:focus-visible {
@@ -71,7 +71,7 @@
         margin-bottom: 25px;
         position: absolute;
         top: -30px;
-        transition: background-color 0.25s linear;
+        transition: background-color var(--transition-duration-minimal) linear;
         z-index: 2;
       }
 
