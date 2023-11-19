@@ -145,6 +145,7 @@ textarea {
   font-size: var(--small-font-size);
   outline: 0;
   padding: 0.5rem 1rem;
+  width: 100%;
 
   &:focus,
   &:focus-visible {
@@ -155,7 +156,7 @@ textarea {
 label {
   display: block;
   font-family: var(--sans-serif-font-family);
-  font-size: var(--small-font-size);
+  font-size: var(--default-font-size);
   font-weight: 600;
   margin: 0;
   padding: 0;

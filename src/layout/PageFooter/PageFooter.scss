@@ -1,3 +1,5 @@
+@use '../../assets/sass/' as *;
+
 .footer {
   background: var(--primary-blue);
   background: linear-gradient(
@@ -10,11 +12,24 @@
   &__container {
     display: grid;
     gap: 2rem 4rem;
-    grid-template-columns: 250px repeat(2, 1fr);
-    grid-template-areas:
-      'header header header'
-      'links outro form';
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-areas: 'links outro form';
     padding-top: 100px;
+
+    @media (max-width: $breakpoint-laptop) {
+      grid-template-columns: 200px 1fr;
+      grid-template-areas:
+        'outro outro'
+        'links form';
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'outro'
+        'form'
+        'links';
+    }
   }
 
   h5 {
@@ -34,6 +49,10 @@
 
   &__outro {
     grid-area: outro;
+
+    @media (max-width: $breakpoint-laptop) {
+      font-size: var(--large-font-size);
+    }
   }
 
   &__contact-form {
@@ -54,6 +73,12 @@
   &__links {
     grid-area: links;
 
+    h5 {
+      @media (max-width: $breakpoint-tablet) {
+        margin-bottom: 2rem;
+      }
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
@@ -61,6 +86,22 @@
       list-style: none;
       margin: 0;
       padding: 0;
+
+      @media (max-width: $breakpoint-tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem 0;
+      }
+    }
+
+    &-item {
+      @media (max-width: $breakpoint-tablet) {
+        flex-basis: calc(100% / 3);
+      }
+
+      @media (max-width: $breakpoint-phone) {
+        flex-basis: 50%;
+      }
     }
 
     &-link {
