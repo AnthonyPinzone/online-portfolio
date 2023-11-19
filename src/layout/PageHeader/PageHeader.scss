@@ -1,3 +1,5 @@
+// @use '../../assets/sass' as *;
+
 @use '../../assets/sass' as *;
 
 .header {
@@ -13,7 +15,6 @@
 
   &__container {
     --container-vertical-padding: 20px;
-    --container-horizontal-padding: 20px;
     align-items: baseline;
     display: flex;
     gap: var(--spacer);
@@ -28,6 +29,10 @@
     font-size: var(--logo-font-size);
     font-weight: 400;
     margin: 0;
+
+    @media (max-width: $breakpoint-phone) {
+      font-size: clamp(var(--default-font-size), 6.5vw, var(--logo-font-size));
+    }
   }
 
   &__nav {
@@ -36,12 +41,16 @@
       border: 2px solid var(--primary-blue);
       color: var(--primary-blue);
       display: none;
-      font-size: var(--default-font-size);
+      font-size: var(--largest-font-size);
       font-weight: 600;
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 0.5rem;
       position: relative;
       text-transform: uppercase;
       z-index: var(--z-mobile-menu-button);
+
+      @media (max-width: $breakpoint-tablet) {
+        display: initial;
+      }
 
       &:focus,
       &:focus-visible,
@@ -50,8 +59,8 @@
         color: var(--white-100);
       }
 
-      @media (max-width: $breakpoint-tablet) {
-        display: initial;
+      svg {
+        display: block;
       }
     }
     &-list {
@@ -63,13 +72,12 @@
       z-index: var(--z-mobile-menu);
 
       @media (max-width: $breakpoint-tablet) {
+        --spacer: 1rem;
         background: var(--primary-yellow);
         box-shadow: 0px 20px 15px -15px rgba(0, 0, 0, 0.25);
         flex-direction: column;
-        gap: 0;
         height: 0;
         overflow: hidden;
-        padding: 0 0 0.5rem;
         position: fixed;
         top: 75px;
         left: 0;
@@ -80,14 +88,21 @@
 
       &--open {
         @media (max-width: $breakpoint-tablet) {
-          height: 212px;
+          height: 220px;
         }
       }
     }
 
     &-item {
       @media (max-width: $breakpoint-tablet) {
-        padding: 0.5rem 1rem;
+        padding: 0 1rem;
+
+        &:first-child {
+          margin-top: 1rem;
+        }
+        &:last-child {
+          margin-bottom: 1rem;
+        }
       }
     }
 

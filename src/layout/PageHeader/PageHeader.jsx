@@ -2,6 +2,8 @@ import { useState, useContext } from 'react';
 import { PrefersReducedMotionContext } from '../../common/contexts';
 import { Container } from '../Container/Container';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { MdClose } from 'react-icons/md';
 import './PageHeader.scss';
 
 export default function Header() {
@@ -34,8 +36,13 @@ export default function Header() {
           <button
             className="header__nav-button"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            aria-label={
+              isMobileMenuOpen
+                ? 'Close Navigation Menu'
+                : 'Open Navigation Menu'
+            }
           >
-            Menu
+            {isMobileMenuOpen ? <MdClose /> : <GiHamburgerMenu />}
           </button>
           <ul
             className={`header__nav-list ${
