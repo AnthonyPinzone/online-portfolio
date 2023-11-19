@@ -20,7 +20,7 @@ export function Projects() {
   return (
     <section id="projects" className="projects">
       <Container className="projects__container">
-        <h2 className="projects__title">What I've Worked On</h2>
+        <h2 className="projects__title">What I&apos;ve Worked On</h2>
         <ul className="projects__gallery">
           {data.projects?.map(
             ({ name, description, skills, featuredImage, url }) => (
