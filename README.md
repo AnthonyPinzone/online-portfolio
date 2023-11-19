@@ -18,9 +18,9 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 - [x] Break down the initial implementation into components
 - [x] Make the navbar responsive
 - [x] Make the hero responsive
-- [ ] Make the projects section responsive
-- [ ] Make the experience section responsive
-- [ ] Make the footer responsive
+- [x] Make the projects section responsive
+- [x] Make the experience section responsive
+- [x] Make the footer responsive
 - [ ] Break large components down into smaller, more reusable components
 - [ ] Update the data file to include as much real data as possible, replacing any lorem ipsum or stock images
 - [x] Navigation links should smooth scroll to the appropriate section
@@ -32,8 +32,8 @@ Follow along on this sites journey via the checklist below, and if you're lookin
   - [ ] Developer insights (define what this looks like)
   - [ ] Skills / Techologies / Languages used
   - [ ] HD imagery (if available)
-- [ ] Setup horizontal scrolling in the experience section with CSS snapping functionality
-- [ ] Remove the next and previous buttons for now, make each card tabbable for accessibility
+- [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
+- [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
 - [ ] Add skills icons to the experience cards
   - [ ] Find icons for soft skills as part of this task
 - [ ] Hook up all the footer navigation links
