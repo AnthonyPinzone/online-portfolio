@@ -1,10 +1,25 @@
+@use '../../assets/sass' as *;
+
 .intro {
+  --angle-starting-point: 80%;
   background-image: linear-gradient(
     178deg,
-    var(--primary-yellow) 80%,
-    var(--white) calc(80% + 2px)
+    var(--primary-yellow) var(--angle-starting-point),
+    var(--white) calc(var(--angle-starting-point) + 2px)
   );
   min-height: fit-content;
+
+  @media (max-width: $breakpoint-desktop) {
+    --angle-starting-point: 85%;
+  }
+
+  @media (max-width: $breakpoint-laptop) {
+    --angle-starting-point: 92%;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    --angle-starting-point: 96%;
+  }
 
   &__cta {
     color: var(--secondary-red);
@@ -22,10 +37,24 @@
   }
 
   &__container {
+    align-items: start;
     display: grid;
     gap: 40px;
     grid-template-areas: 'photo details .';
-    grid-template-columns: 4fr 7fr 1fr;
+    grid-template-columns: 4fr 6fr 2fr;
+
+    @media (max-width: $breakpoint-desktop) {
+      grid-template-areas: 'photo details';
+      grid-template-columns: 4fr 8fr;
+    }
+
+    @media (max-width: $breakpoint-tablet) {
+      grid-template-areas:
+        'photo'
+        'details';
+      grid-template-columns: 1fr;
+      padding-bottom: 40px;
+    }
   }
 
   &-details {
@@ -36,11 +65,21 @@
     &__title {
       font-family: var(--serif-font-family);
       font-size: var(--title-font-size);
+      line-height: 1;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: clamp(20px, 10vw, var(--title-font-size));
+      }
     }
 
     &__paragraph {
       font-size: var(--large-font-size);
       margin: 15px 0 0;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: var(--larger-font-size);
+        margin: 25px 0 0 0;
+      }
     }
 
     &__social {
@@ -49,6 +88,10 @@
       list-style: none;
       margin: 25px 0 0 0;
       padding: 0;
+
+      @media (max-width: $breakpoint-tablet) {
+        flex-wrap: wrap;
+      }
 
       &-link {
         background-color: #ffefad;
@@ -63,6 +106,11 @@
         text-decoration: none;
         transition: var(--transition-duration-minimal) linear;
 
+        @media (max-width: $breakpoint-tablet) {
+          font-size: var(--default-font-size);
+          padding: 0.5rem 1rem;
+        }
+
         &:focus,
         &:focus-visible,
         &:hover {
@@ -76,6 +124,11 @@
   &-photo {
     grid-area: photo;
     position: relative;
+
+    @media (max-width: $breakpoint-tablet) {
+      margin: 0 auto;
+      width: clamp(250px, 300px, 100%);
+    }
 
     &__img {
       border: 1px solid var(--primary-blue);

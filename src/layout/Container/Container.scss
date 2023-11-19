@@ -3,7 +3,7 @@
 .container {
   --container-width: #{$container-widescreen};
   --container-vertical-padding: 40px;
-  --container-horizontal-padding: 0;
+  --container-horizontal-padding: 20px;
 
   max-width: var(--container-width);
   margin: 0 auto;

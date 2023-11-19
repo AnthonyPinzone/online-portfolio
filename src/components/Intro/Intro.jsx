@@ -25,17 +25,32 @@ export function Intro() {
           </p>
           <ul className="intro-details__social">
             <li className="intro-details__social-item">
-              <a className="intro-details__social-link" href="">
+              <a
+                className="intro-details__social-link"
+                href="https://www.linkedin.com/in/anthonyjpinzone/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin /> LinkedIn
               </a>
             </li>
             <li className="intro-details__social-item">
-              <a className="intro-details__social-link" href="">
+              <a
+                className="intro-details__social-link"
+                href="https://github.com/AnthonyPinzone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub /> Github
               </a>
             </li>
             <li className="intro-details__social-item">
-              <a className="intro-details__social-link" href="">
+              <a
+                className="intro-details__social-link"
+                href="https://codepen.io/AnthonyPinzone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaCodepen /> CodePen
               </a>
             </li>
