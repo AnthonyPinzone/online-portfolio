@@ -55,6 +55,10 @@ h6 {
   font-size: var(--heading-6-font-size);
 }
 
+a {
+  cursor: pointer;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -72,7 +76,7 @@ button {
   font-size: var(--default-font-size);
   outline: 0;
   padding: 0;
-  transition: 0.25s linear;
+  transition: var(--transition-duration-minimal) linear;
 
   &:focus,
   &:focus-visible,

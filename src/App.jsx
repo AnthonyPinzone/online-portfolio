@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
-import { ThemeContext, DataContext } from './common/contexts';
+import {
+  ThemeContext,
+  DataContext,
+  PrefersReducedMotionContext,
+} from './common/contexts';
 import { PageLayout as Layout } from './layout';
 import { Intro, Projects, Experience } from './components';
 import './App.scss';
@@ -7,6 +11,7 @@ import './App.scss';
 function App() {
   const [data, setData] = useState(null);
   const [theme, setTheme] = useState('light');
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   const getData = async () => {
     try {
@@ -20,16 +25,22 @@ function App() {
 
   useEffect(() => {
     getData();
+
+    setPrefersReducedMotion(
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    );
   }, []);
 
   return (
     <DataContext.Provider value={data}>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-        <Layout>
-          <Intro />
-          <Projects />
-          <Experience />
-        </Layout>
+        <PrefersReducedMotionContext.Provider value={prefersReducedMotion}>
+          <Layout>
+            <Intro />
+            <Projects />
+            <Experience />
+          </Layout>
+        </PrefersReducedMotionContext.Provider>
       </ThemeContext.Provider>
     </DataContext.Provider>
   );

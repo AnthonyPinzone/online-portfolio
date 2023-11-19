@@ -87,4 +87,16 @@ $container-widescreen: 1200px;
   --jquery-logo-color: #0769ad;
   --react-logo-color: #61dafb;
   --typescript-logo-color: #007acc;
+
+  --transition-duration-minimal: 0.25s;
+  --transition-duration-average: 0.5s;
+  --transition-duration-long: 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration-minimal: 0s;
+    --transition-duration-average: 0s;
+    --transition-duration-long: 0s;
+  }
 }
