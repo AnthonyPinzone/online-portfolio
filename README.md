@@ -17,12 +17,12 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 - [x] Continue tweaking the design until you're happy with the entire page
 - [x] Break down the initial implementation into components
 - [x] Make the navbar responsive
-- [ ] Make the hero responsive
+- [x] Make the hero responsive
 - [ ] Make the projects section responsive
 - [ ] Make the experience section responsive
 - [ ] Make the footer responsive
 - [ ] Break large components down into smaller, more reusable components
-- [ ] Update the `data.json` file to include as much real data as possible, replacing any lorem ipsum or stock images
+- [ ] Update the data file to include as much real data as possible, replacing any lorem ipsum or stock images
 - [x] Navigation links should smooth scroll to the appropriate section
   - [x] On mobile, close the panel first, then scroll
   - [x] Animations should be removed if `prefers-reduced-motion` is set to `reduce`
