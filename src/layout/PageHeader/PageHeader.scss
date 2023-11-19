@@ -1,11 +1,27 @@
+@use '../../assets/sass' as *;
+
 .header {
+  --z-header: 9999;
+  --z-mobile-menu-button: 9998;
+  --z-mobile-menu: 9997;
+  --spacer: 40px;
+
   background-color: var(--primary-yellow);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
 
   &__container {
     --container-vertical-padding: 20px;
+    --container-horizontal-padding: 20px;
     align-items: baseline;
     display: flex;
-    gap: 40px;
+    gap: var(--spacer);
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint-tablet) {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -15,17 +31,69 @@
   }
 
   &__nav {
+    &-button {
+      background-color: transparent;
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      display: none;
+      font-size: var(--default-font-size);
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      position: relative;
+      text-transform: uppercase;
+      z-index: var(--z-mobile-menu-button);
+
+      &:focus,
+      &:focus-visible,
+      &:hover {
+        background-color: var(--primary-blue);
+        color: var(--white-100);
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        display: initial;
+      }
+    }
     &-list {
       display: flex;
-      gap: 25px;
+      gap: var(--spacer);
       list-style: none;
       margin: 0;
       padding: 0;
+      z-index: var(--z-mobile-menu);
+
+      @media (max-width: $breakpoint-tablet) {
+        background: var(--primary-yellow);
+        box-shadow: 0px 20px 15px -15px rgba(0, 0, 0, 0.25);
+        flex-direction: column;
+        gap: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0 0 0.5rem;
+        position: fixed;
+        top: 75px;
+        left: 0;
+        text-align: center;
+        transition: height var(--transition-duration-minimal) ease-in-out;
+        width: 100%;
+      }
+
+      &--open {
+        @media (max-width: $breakpoint-tablet) {
+          height: 212px;
+        }
+      }
+    }
+
+    &-item {
+      @media (max-width: $breakpoint-tablet) {
+        padding: 0.5rem 1rem;
+      }
     }
 
     &-link {
       color: var(--primary-blue);
-      font-size: var(--small-font-size);
+      font-size: var(--default-font-size);
       outline: 0;
       text-decoration: none;
 
@@ -35,14 +103,37 @@
         display: block;
         height: 1px;
         width: 0;
-        transition: 0.25s linear;
+        transition: var(--transition-duration-minimal) linear;
+
+        @media (max-width: $breakpoint-tablet) {
+          display: none;
+          height: 0;
+        }
       }
 
+      &.active,
       &:focus,
       &:focus-visible,
       &:hover {
         &:after {
           width: 100%;
+        }
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        border: 3px solid var(--primary-blue);
+        border-radius: var(--border-radius-small);
+        display: block;
+        font-size: var(--larger-font-size);
+        padding: 0.5rem;
+        transition: var(--transition-duration-minimal) linear;
+
+        &.active,
+        &:focus,
+        &:focus-visible,
+        &:hover {
+          background-color: var(--primary-blue);
+          color: var(--white-100);
         }
       }
     }

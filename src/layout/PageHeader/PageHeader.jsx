@@ -1,31 +1,78 @@
-import { Container } from '../';
-import { DarkModeToggle } from '../../components';
+import { useState, useContext } from 'react';
+import { PrefersReducedMotionContext } from '../../common/contexts';
+import { Container } from '../Container/Container';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import './PageHeader.scss';
 
 export default function Header() {
+  const { prefersReducedMotion } = useContext(PrefersReducedMotionContext);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const animationOptions = {
+    activeClass: 'active',
+    duration: prefersReducedMotion ? 0 : 500,
+    delay: !prefersReducedMotion && isMobileMenuOpen ? 300 : 0,
+    offset: -76,
+    smooth: true,
+    spy: true,
+  };
+
   return (
     <header className="header">
       <Container className="header__container">
-        <h1 className="header__title">Anthony Pinzone</h1>
+        <h1 className="header__title">
+          <a
+            onClick={() => {
+              setIsMobileMenuOpen(false);
+              scroll.scrollToTop({ duration: animationOptions.duration });
+            }}
+          >
+            Anthony Pinzone
+          </a>
+        </h1>
         <nav className="header__nav">
-          <ul className="header__nav-list">
+          <button
+            className="header__nav-button"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+          >
+            Menu
+          </button>
+          <ul
+            className={`header__nav-list ${
+              isMobileMenuOpen ? 'header__nav-list--open' : ''
+            }`}
+          >
             <li className="header__nav-item">
-              <a className="header__nav-link" href="">
+              <Link
+                className="header__nav-link"
+                to="projects"
+                onClick={() => setIsMobileMenuOpen(false)}
+                {...animationOptions}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="">
+              <Link
+                className="header__nav-link"
+                to="experience"
+                onClick={() => setIsMobileMenuOpen(false)}
+                {...animationOptions}
+              >
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="header__nav-item">
-              <a className="header__nav-link" href="">
+              <Link
+                className="header__nav-link"
+                to="footer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                {...animationOptions}
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
-          <DarkModeToggle />
         </nav>
       </Container>
     </header>
