@@ -1,3 +1,5 @@
+@use '../../assets/sass/' as *;
+
 .experience {
   background-color: var(--white-100);
 
@@ -45,6 +47,14 @@
       scroll-snap-align: center;
       scroll-snap-stop: always;
       transition: background-color var(--transition-duration-minimal) linear;
+
+      @media (max-width: $breakpoint-laptop) {
+        flex-basis: 50%;
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        flex-basis: 100%;
+      }
 
       &:focus,
       &:focus-visible {

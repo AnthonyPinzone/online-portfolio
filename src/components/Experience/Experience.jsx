@@ -13,14 +13,14 @@ export function Experience() {
       <Container className="experience__container">
         <header className="experience__header">
           <h2 className="experience__title">Where I&apos;ve Been</h2>
-          <div className="experience__timeline-controls">
+          {/* <div className="experience__timeline-controls">
             <button className="experience__button">
               <AiOutlineLeft /> Prev
             </button>
             <button className="experience__button">
               Next <AiOutlineRight />
             </button>
-          </div>
+          </div> */}
         </header>
         <div className="experience__timeline" tabIndex={-1}>
           {data.experience?.map(
