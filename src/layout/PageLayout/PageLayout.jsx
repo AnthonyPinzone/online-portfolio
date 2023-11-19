@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import Header from '../';
-import Footer from '../';
+import Header from '../PageHeader/PageHeader';
+import Footer from '../PageFooter/PageFooter';
 
 export function PageLayout({ children }) {
   return (
@@ -13,5 +13,5 @@ export function PageLayout({ children }) {
 }
 
 PageLayout.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.node,
 };
