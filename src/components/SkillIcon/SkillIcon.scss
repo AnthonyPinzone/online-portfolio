@@ -2,14 +2,13 @@
   display: flex;
   font-size: var(--largest-font-size);
   margin: 0;
-  padding: 0;
+  padding: 0rem;
   position: relative;
 
   svg {
     cursor: pointer;
     fill: var(--primary-blue);
     opacity: 0.75;
-    transition: var(--transition-duration-minimal) linear;
 
     &:focus,
     &:focus-visible,
@@ -24,11 +23,12 @@
     border-radius: var(--border-radius-small);
     color: var(--white-100);
     display: none;
-    font-size: var(--small-font-size);
-    padding: 0.5rem;
+    font-size: var(--smaller-font-size);
+    padding: 0.15rem 0.25rem;
+    pointer-events: none;
     position: absolute;
     left: 50%;
-    top: 100%;
+    bottom: 115%;
     transform: translateX(-50%);
     white-space: nowrap;
     z-index: 1;

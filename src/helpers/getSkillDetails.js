@@ -1,13 +1,8 @@
-import { AiFillHtml5, AiOutlineTeam } from 'react-icons/ai';
 import {
   BiBook,
   BiBookOpen,
-  BiChalkboard,
   BiDizzy,
   BiGroup,
-  BiLogoCss3,
-  BiLogoGit,
-  BiLogoJavascript,
   BiLogoJquery,
   BiLogoPostgresql,
   BiLogoReact,
@@ -20,37 +15,43 @@ import {
 } from 'react-icons/bi';
 import {
   FaBootstrap,
-  FaBug,
   FaCamera,
   FaChalkboardTeacher,
-  FaCheckSquare,
+  FaComments,
+  FaCss3Alt,
   FaDollarSign,
+  FaGit,
   FaGlobe,
   FaHandHoldingHeart,
+  FaHtml5,
+  FaJs,
   FaMobileAlt,
+  FaPaintBrush,
   FaPalette,
   FaProjectDiagram,
   FaTrello,
   FaVideo,
 } from 'react-icons/fa';
 import {
-  MdAltRoute,
-  MdOutlineChatBubbleOutline,
-  MdOutlineDesignServices,
-} from 'react-icons/md';
-import { PiFilmScript, PiPaintBrushDuotone } from 'react-icons/pi';
+  FaBug,
+  FaLocationDot,
+  FaPenToSquare,
+  FaPeopleGroup,
+  FaRegObjectGroup
+} from "react-icons/fa6";
+import { GoChecklist } from "react-icons/go";
 import { SiAdobe, SiExpress, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
 const skillDetailsMap = {
   html: {
     title: 'HTML',
-    icon: AiFillHtml5,
+    icon: FaHtml5,
     type: 'technical',
     props: {},
   },
   css: {
     title: 'CSS',
-    icon: BiLogoCss3,
+    icon: FaCss3Alt,
     type: 'technical',
     props: {},
   },
@@ -62,7 +63,7 @@ const skillDetailsMap = {
   },
   javascript: {
     title: 'Javascript',
-    icon: BiLogoJavascript,
+    icon: FaJs,
     type: 'technical',
     props: {},
   },
@@ -92,7 +93,7 @@ const skillDetailsMap = {
   },
   git: {
     title: 'Git',
-    icon: BiLogoGit,
+    icon: FaGit,
     type: 'technical',
     props: {},
   },
@@ -109,8 +110,8 @@ const skillDetailsMap = {
     props: {},
   },
   testing: {
-    title: 'Technical Testing',
-    icon: FaCheckSquare,
+    title: 'Cypress & Jest Testing',
+    icon: GoChecklist,
     type: 'technical',
     props: {},
   },
@@ -158,7 +159,7 @@ const skillDetailsMap = {
   },
   graphics: {
     title: 'Graphic Design',
-    icon: MdOutlineDesignServices,
+    icon: FaRegObjectGroup,
     type: 'technical',
     props: {},
   },
@@ -176,19 +177,19 @@ const skillDetailsMap = {
   },
   script: {
     title: 'Script Writing',
-    icon: PiFilmScript,
     type: 'technical',
+    icon: FaPenToSquare,
     props: {},
   },
   teaching: {
     title: 'Teaching',
-    icon: BiChalkboard,
+    icon: FaChalkboardTeacher,
     type: 'soft',
     props: {},
   },
   communication: {
     title: 'Communication',
-    icon: MdOutlineChatBubbleOutline,
+    icon: FaComments,
     type: 'soft',
     props: {},
   },
@@ -212,7 +213,7 @@ const skillDetailsMap = {
   },
   collaboration: {
     title: 'Collaboration & Teamwork',
-    icon: AiOutlineTeam,
+    icon: FaPeopleGroup,
     type: 'soft',
     props: {},
   },
@@ -223,7 +224,7 @@ const skillDetailsMap = {
     props: {},
   },
   scrum: {
-    title: 'Agile and Scrum Methodologies',
+    title: 'Agile and Scrum',
     icon: FaTrello,
     type: 'soft',
     props: {},
@@ -236,7 +237,7 @@ const skillDetailsMap = {
   },
   decisiveness: {
     title: 'Decision Making',
-    icon: MdAltRoute,
+    icon: FaLocationDot,
     type: 'soft',
     props: {},
   },
@@ -260,7 +261,7 @@ const skillDetailsMap = {
   },
   creativity: {
     title: 'Creativity',
-    icon: PiPaintBrushDuotone,
+    icon: FaPaintBrush,
     type: 'soft',
     props: {},
   },
