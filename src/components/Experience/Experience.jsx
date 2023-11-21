@@ -1,7 +1,7 @@
 import React from 'react';
 import { DataContext } from '../../common/contexts';
 import { Container } from '../../layout';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { SkillIcon } from '../';
 import './Experience.scss';
 
 export function Experience() {
@@ -13,18 +13,17 @@ export function Experience() {
       <Container className="experience__container">
         <header className="experience__header">
           <h2 className="experience__title">Where I&apos;ve Been</h2>
-          {/* <div className="experience__timeline-controls">
-            <button className="experience__button">
-              <AiOutlineLeft /> Prev
-            </button>
-            <button className="experience__button">
-              Next <AiOutlineRight />
-            </button>
-          </div> */}
         </header>
         <div className="experience__timeline" tabIndex={-1}>
           {data.experience?.map(
-            ({ company, position, startDate, endDate, description }) => (
+            ({
+              company,
+              position,
+              startDate,
+              endDate,
+              description,
+              skills,
+            }) => (
               <article
                 className="experience__timeline-article"
                 key={`${company}-${position}-${startDate}`}
@@ -41,6 +40,16 @@ export function Experience() {
                   <p className="experience__timeline-description">
                     {description}
                   </p>
+                  <div className="experience__timeline-skills">
+                    <h6>Skill Development</h6>
+                    {skills.map((skill) => (
+                      <SkillIcon
+                        className="experience__timeline-skill"
+                        key={skill}
+                        skill={skill}
+                      />
+                    ))}
+                  </div>
                 </div>
               </article>
             ),

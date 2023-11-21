@@ -48,7 +48,7 @@
       scroll-snap-stop: always;
       transition: background-color var(--transition-duration-minimal) linear;
 
-      @media (max-width: $breakpoint-laptop) {
+      @media (max-width: $breakpoint-desktop) {
         flex-basis: 50%;
       }
 
@@ -127,6 +127,20 @@
 
     &-content {
       padding: 25px;
+    }
+
+    &-skills {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-top: 1rem;
+
+      h6 {
+        flex-basis: 100%;
+        margin-bottom: 0.25rem;
+      }
     }
   }
 }

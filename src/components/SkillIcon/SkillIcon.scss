@@ -1,0 +1,44 @@
+.skill-icon {
+  display: flex;
+  font-size: var(--largest-font-size);
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  svg {
+    cursor: pointer;
+    fill: var(--primary-blue);
+    opacity: 0.75;
+    transition: var(--transition-duration-minimal) linear;
+
+    &:focus,
+    &:focus-visible,
+    &:hover {
+      fill: var(--secondary-red);
+      opacity: 1;
+    }
+  }
+
+  figcaption {
+    background-color: var(--primary-blue);
+    border-radius: var(--border-radius-small);
+    color: var(--white-100);
+    display: none;
+    font-size: var(--small-font-size);
+    padding: 0.5rem;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    figcaption {
+      display: block;
+    }
+  }
+}
