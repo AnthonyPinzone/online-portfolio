@@ -34,8 +34,8 @@ Follow along on this sites journey via the checklist below, and if you're lookin
   - [ ] HD imagery (if available)
 - [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
 - [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
-- [ ] Add skills icons to the experience cards
-  - [ ] Find icons for soft skills as part of this task
+- [x] Add skills icons to the experience cards
+  - [x] Find icons for soft skills as part of this task
 - [ ] Hook up all the footer navigation links
 - [ ] Hook up the contact form to send an email
 - [ ] Final Walkthrough
