@@ -8,36 +8,84 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 
 ## Portfolio MVP
 
-- [x] Choose a stack for the 2023 site update
-- [x] Get a new branch started for the 2023 site update
-- [x] Install the chosen stack on the new branch
-- [x] Setup linting and tooling (ESLint, Prettier, SASS, etc)
-- [x] Setup some basic SASS functions, mixins and variables
-- [x] Get the homepage implemented with plain HTML/CSS
-- [x] Continue tweaking the design until you're happy with the entire page
-- [x] Break down the initial implementation into components
-- [x] Make the navbar responsive
-- [x] Make the hero responsive
-- [x] Make the projects section responsive
-- [x] Make the experience section responsive
-- [x] Make the footer responsive
-- [ ] Break large components down into smaller, more reusable components
-- [ ] Update the data file to include as much real data as possible, replacing any lorem ipsum or stock images
-- [x] Navigation links should smooth scroll to the appropriate section
-  - [x] On mobile, close the panel first, then scroll
+- [x] Project Setup
+
+  - [x] Choose a stack for the 2023 site update
+  - [x] Get a new branch started for the 2023 site update
+  - [x] Install the chosen stack on the new branch
+  - [x] Setup linting and tooling (ESLint, Prettier, SASS, etc)
+  - [x] Setup some basic SASS functions, mixins and variables
+
+- [x] Initial Design & Structure
+
+  - [x] Get the homepage implemented with plain HTML/CSS
+  - [x] Continue tweaking the design until you're happy with the entire page
+  - [x] Break down the initial implementation into components
+
+- [ ] Global Features
+
   - [x] Animations should be removed if `prefers-reduced-motion` is set to `reduce`
-- [ ] View Project links should expand the chosen project into a modal like component with the following info:
-  - [ ] Problem statement
-  - [ ] Solution statement
-  - [ ] Developer insights (define what this looks like)
-  - [ ] Skills / Techologies / Languages used
-  - [ ] HD imagery (if available)
-- [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
-- [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
-- [x] Add skills icons to the experience cards
-  - [x] Find icons for soft skills as part of this task
-- [ ] Hook up all the footer navigation links
-- [ ] Hook up the contact form to send an email
+  - [x] A simple JSON file should hold as much data as possible and be available to all components
+  - [x] Stub out a context for the future theming feature
+  - [ ] _More to come..._
+
+- [ ] Reusable Components
+
+  - [x] SkillsIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
+  - [ ] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
+  - [ ] _More to come..._
+
+- [x] Navigation
+
+  - [x] Make the navbar responsive
+  - [x] Navigation links should smooth scroll to the appropriate section
+    - [x] On mobile, close the panel first, then scroll
+  - [x] Implement the mobile menu functionality
+  - [x] Clicking the logo should bring the user to the top of the page
+
+- [x] Hero
+
+  - [x] Make the hero responsive
+  - [x] Find a good image to use
+  - [x] Determine the content
+  - [x] Add quick-access links for LinkedIn, Github and CodePen
+
+- [ ] Projects
+
+  - [x] Make the projects section responsive
+  - [ ] Add Project Summaries
+  - [ ] Add Project Images
+  - [ ] View Project links should expand the chosen project into a modal like component with the following info:
+    - [ ] Problem statement
+    - [ ] Solution statement
+    - [ ] Developer insights (define what this looks like)
+    - [ ] Skills / Techologies / Languages used
+    - [ ] HD imagery (if available)
+
+- [x] Experiences
+
+  - [x] Make the experience section responsive
+  - [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
+  - [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
+  - [x] Add skills icons to the experience cards
+    - [x] Find icons for soft skills as part of this task
+  - [x] Add experiences content
+
+- [ ] Testimonials
+
+  - [ ] Add new section for testimonials
+  - [ ] Setup the HTML structure: `figure` and `figcaption` with image
+  - [ ] Style the component: large quote, smaller name, circle image
+  - [ ] Make the testimonial section responsive
+  - [ ] Gather testimonials from LinkedIn, former coworkers, and current students
+  - [ ] Add testimonial content to the data file
+
+- [ ] Footer
+
+  - [x] Make the footer responsive
+  - [ ] Hook up all the footer navigation links
+  - [ ] Hook up the contact form to send an email using `emailjs`
+
 - [ ] Final Walkthrough
   - [ ] Spelling is correct throughout and grammar is on point
   - [ ] All links go where they're expected to go
