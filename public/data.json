@@ -74,7 +74,7 @@
         "postgres",
         "testing"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "In my latest role, I've drawn on the full range of skills developed throughout my career. Beyond teaching the PERN stack, I've introduced agile and scrum methodologies, instill coding best practices, foster effective team collaboration, and enhance debugging skills. It's not just about the technicalities though; I also emphasize the importance of staying curious, fostering a learning environment beyond the code."
     },
     {
       "company": "GeekHive",
@@ -91,7 +91,7 @@
         "performance",
         "conflict"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "A year into my second stint at GeekHive, I earned a promotion to Development Manager. In this role, I guided resource allocation, conflict management, team building, and process optimization. My commitment to personal growth extended to supporting my team's career aspirations. A notable achievement was transforming onboarding from a 2-week idle experience to a focused 3-day introduction, enhancing efficiency and new developers' integration."
     },
     {
       "company": "GeekHive",
@@ -112,7 +112,7 @@
         "debugging",
         "ux"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "My former boss convinced me to come back to GeekHive to work on a massive 10,000+ page site called Corbion. Always up for the challenge, I dove right in, tackling the task with some creative thinking and the help of Sass, Bootstrap, React and Typescript. Over the following year, I'd continue to take on new challenges, honing my development and leadership skills, and setting the stage for my next role at GeekHive."
     },
     {
       "company": "Craft World Wide",
@@ -131,7 +131,7 @@
         "git",
         "debugging"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "After my first career stint of unemployment, I found my place in a small team at a major marketing agency. My main gig involved crafting landing pages for pharmaceutical companies, leveraging Sass, Bootstrap, and vanilla JavaScript. The high point? Constructing a touch screen informational display using NextJS for a pharmaceutical conference!"
     },
     {
       "company": "GeekHive",
@@ -151,7 +151,7 @@
         "debugging",
         "ux"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "GeekHive was a dream gig—close to home, an incredible culture, and a driving force for my growth as a developer. I crafted amazing websites using React and Typescript and got hands-on with building a mobile app using React Native. Although my first stint ended abruptly due to a company layoff, it was a transformative experience that significantly sharpened my developer skills."
     },
     {
       "company": "Capturepoint",
@@ -170,7 +170,7 @@
         "debugging",
         "ux"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "After the closure of A&P, I joined Capturepoint's small team, working on the recreational SAAS, CommunityPass. Here, I dove into JavaScript and jQuery, taking on cool projects like a touch-first kiosk for a senior citizen home. The highlight was reshaping CommunityPass' outdated design into a more user-friendly experience—a role that truly tested and enhanced my ability to tackle complex tasks."
     },
     {
       "company": "A&P",
@@ -188,7 +188,7 @@
         "communication",
         "creativity"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "Variety was the spice of life in my role as 'the media guy' at A&P. I took on creating email and print graphics for internal promotions, revamped all seven branded marketing sites, delved deeper into video production handling script writing, recording, editing, and releases, and even doubled as the company event photographer. These experiences instilled in me a desire to always be learning something new."
     },
     {
       "company": "A&P",
@@ -203,7 +203,7 @@
         "training",
         "communication"
       ],
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
+      "description": "For my first job out of college, I joined the crew at A&P, the supermarket giant. The HR head was big on letting folks try their hand at different aspects of the department. That meant I got involved in recruiting, training, onboarding, and even took a shot at video production. The freedom to explore like this not only polished my communication skills but also fueled my curiosity, laying down a solid foundation for what lay ahead."
     }
   ]
 }
