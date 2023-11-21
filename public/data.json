@@ -55,7 +55,25 @@
       "position": "Fullstack Instructor",
       "startDate": "Nov 2022",
       "endDate": "Present",
-      "skills": [],
+      "skills": [
+        "teaching",
+        "communication",
+        "curriculum",
+        "debugging",
+        "mentorship",
+        "leadership",
+        "collaboration",
+        "pm",
+        "scrum",
+        "git",
+        "html",
+        "sass",
+        "javascript",
+        "react",
+        "express",
+        "postgres",
+        "testing"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -63,7 +81,16 @@
       "position": "Development Manager",
       "startDate": "Dec 2021",
       "endDate": "Sep 2022",
-      "skills": [],
+      "skills": [
+        "pm",
+        "leadership",
+        "resourcing",
+        "scrum",
+        "decisiveness",
+        "planning",
+        "performance",
+        "conflict"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -71,7 +98,20 @@
       "position": "Frontend Developer",
       "startDate": "Sep 2020",
       "endDate": "Dec 2021",
-      "skills": [],
+      "skills": [
+        "html",
+        "sass",
+        "bootstrap",
+        "tailwind",
+        "javascript",
+        "react",
+        "typescript",
+        "responsive",
+        "compatibility",
+        "git",
+        "debugging",
+        "ux"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -79,7 +119,18 @@
       "position": "Frontend Developer",
       "startDate": "Jun 2019",
       "endDate": "Sep 2020",
-      "skills": [],
+      "skills": [
+        "html",
+        "sass",
+        "bootstrap",
+        "javascript",
+        "react",
+        "next",
+        "responsive",
+        "compatibility",
+        "git",
+        "debugging"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -87,7 +138,19 @@
       "position": "Frontend Developer",
       "startDate": "Mar 2018",
       "endDate": "Apr 2019",
-      "skills": [],
+      "skills": [
+        "html",
+        "sass",
+        "bootstrap",
+        "javascript",
+        "react",
+        "typescript",
+        "responsive",
+        "compatibility",
+        "git",
+        "debugging",
+        "ux"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -95,7 +158,18 @@
       "position": "UI Developer",
       "startDate": "Sep 2015",
       "endDate": "Mar 2018",
-      "skills": [],
+      "skills": [
+        "html",
+        "sass",
+        "javascript",
+        "jquery",
+        "coldfusion",
+        "responsive",
+        "compatibility",
+        "git",
+        "debugging",
+        "ux"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -103,7 +177,17 @@
       "position": "Media Specialist",
       "startDate": "Oct 2012",
       "endDate": "Sep 2015",
-      "skills": [],
+      "skills": [
+        "html",
+        "css",
+        "ux",
+        "graphics",
+        "video",
+        "photography",
+        "script",
+        "communication",
+        "creativity"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     },
     {
@@ -111,7 +195,14 @@
       "position": "Human Resources",
       "startDate": "Nov 2008",
       "endDate": "Oct 2012",
-      "skills": [],
+      "skills": [
+        "recruitment",
+        "relations",
+        "policy",
+        "conflict",
+        "training",
+        "communication"
+      ],
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam reprehenderit consequat minim cupidatat labore consequat laborum. Ut excepteur nostrud ex minim ea dolore. Tempor proident minim cillum magna laboris ut irure sint eiusmod excepteur in quis eu fugiat."
     }
   ]
