@@ -1,10 +1,17 @@
+import PropTypes from 'prop-types';
 import { Container } from '../Container/Container';
+import { ScrollToElement } from '../../components/';
 import { BsArrowUpRight, BsFillSendFill, BsPersonVcard } from 'react-icons/bs';
 import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';
+import resumeLink from '../../assets/docs/Anthony-Pinzone_Frontend-Developer_Resume_2023.pdf';
 import './PageFooter.scss';
 
-export default function PageFooter() {
+export default function PageFooter({ isMobileMenuOpen, setIsMobileMenuOpen }) {
+  const animationOptions = {
+    delay: isMobileMenuOpen ? 300 : 0,
+    offset: -76,
+  };
   return (
     <footer id="footer" className="footer">
       <Container className="footer__container">
@@ -12,32 +19,62 @@ export default function PageFooter() {
           <h5>Explore Some More</h5>
           <ul className="footer__links-list">
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <ScrollToElement
+                className="footer__links-link"
+                to="projects"
+                onClick={() => setIsMobileMenuOpen(false)}
+                {...animationOptions}
+              >
                 <RiComputerLine /> Projects
-              </a>
+              </ScrollToElement>
             </li>
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <ScrollToElement
+                className="footer__links-link"
+                to="experience"
+                onClick={() => setIsMobileMenuOpen(false)}
+                {...animationOptions}
+              >
                 <BsPersonVcard /> Experience
-              </a>
+              </ScrollToElement>
             </li>
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <a
+                className="footer__links-link"
+                href="https://www.linkedin.com/in/anthonyjpinzone/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedin /> LinkedIn
               </a>
             </li>
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <a
+                className="footer__links-link"
+                href="https://github.com/AnthonyPinzone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithub /> Github
               </a>
             </li>
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <a
+                className="footer__links-link"
+                href="https://codepen.io/AnthonyPinzone"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaCodepen /> CodePen
               </a>
             </li>
             <li className="footer__links-item">
-              <a className="footer__links-link" href="">
+              <a
+                className="footer__links-link"
+                href={resumeLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 <BsArrowUpRight /> Resume
               </a>
             </li>
@@ -82,3 +119,8 @@ export default function PageFooter() {
     </footer>
   );
 }
+
+PageFooter.propTypes = {
+  isMobileMenuOpen: PropTypes.bool,
+  setIsMobileMenuOpen: PropTypes.func,
+};
