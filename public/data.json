@@ -11,7 +11,7 @@
     {
       "name": "Buckeye Broadband",
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["sass", "react native", "typescript"],
+      "skills": ["sass", "react", "typescript"],
       "images": [],
       "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
       "url": ""
@@ -35,7 +35,7 @@
     {
       "name": "Cablivi Visopedia",
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "nextjs"],
+      "skills": ["html", "sass", "react"],
       "images": [],
       "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
       "url": ""
@@ -43,7 +43,7 @@
     {
       "name": "CommunityPass",
       "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "jquery"],
+      "skills": ["html", "sass", "javascript", "jquery"],
       "images": [],
       "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
       "url": ""
