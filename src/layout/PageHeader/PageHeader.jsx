@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Container } from '../Container/Container';
 import { ScrollToElement, ScrollToPosition } from '../../components/';
@@ -5,7 +6,9 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 import './PageHeader.scss';
 
-export default function PageHeader({ isMobileMenuOpen, setIsMobileMenuOpen }) {
+export default function PageHeader() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const animationOptions = {
     delay: isMobileMenuOpen ? 300 : 0,
     offset: -76,

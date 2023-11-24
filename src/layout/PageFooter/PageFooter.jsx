@@ -7,9 +7,8 @@ import { RiComputerLine } from 'react-icons/ri';
 import resumeLink from '../../assets/docs/Anthony-Pinzone_Frontend-Developer_Resume_2023.pdf';
 import './PageFooter.scss';
 
-export default function PageFooter({ isMobileMenuOpen, setIsMobileMenuOpen }) {
+export default function PageFooter() {
   const animationOptions = {
-    delay: isMobileMenuOpen ? 300 : 0,
     offset: -76,
   };
   return (
@@ -22,7 +21,6 @@ export default function PageFooter({ isMobileMenuOpen, setIsMobileMenuOpen }) {
               <ScrollToElement
                 className="footer__links-link"
                 to="projects"
-                onClick={() => setIsMobileMenuOpen(false)}
                 {...animationOptions}
               >
                 <RiComputerLine /> Projects
@@ -32,7 +30,6 @@ export default function PageFooter({ isMobileMenuOpen, setIsMobileMenuOpen }) {
               <ScrollToElement
                 className="footer__links-link"
                 to="experience"
-                onClick={() => setIsMobileMenuOpen(false)}
                 {...animationOptions}
               >
                 <BsPersonVcard /> Experience
