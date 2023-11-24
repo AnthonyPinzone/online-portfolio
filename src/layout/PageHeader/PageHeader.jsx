@@ -1,36 +1,26 @@
-import { useState, useContext } from 'react';
-import { PrefersReducedMotionContext } from '../../common/contexts';
+import PropTypes from 'prop-types';
 import { Container } from '../Container/Container';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { ScrollToElement, ScrollToPosition } from '../../components/';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 import './PageHeader.scss';
 
-export default function Header() {
-  const { prefersReducedMotion } = useContext(PrefersReducedMotionContext);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+export default function PageHeader({ isMobileMenuOpen, setIsMobileMenuOpen }) {
   const animationOptions = {
-    activeClass: 'active',
-    duration: prefersReducedMotion ? 0 : 500,
-    delay: !prefersReducedMotion && isMobileMenuOpen ? 300 : 0,
+    delay: isMobileMenuOpen ? 300 : 0,
     offset: -76,
-    smooth: true,
-    spy: true,
   };
 
   return (
     <header className="header">
       <Container className="header__container">
         <h1 className="header__title">
-          <a
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              scroll.scrollToTop({ duration: animationOptions.duration });
-            }}
+          <ScrollToPosition
+            position={1000}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             Anthony Pinzone
-          </a>
+          </ScrollToPosition>
         </h1>
         <nav className="header__nav">
           <button
@@ -50,34 +40,34 @@ export default function Header() {
             }`}
           >
             <li className="header__nav-item">
-              <Link
+              <ScrollToElement
                 className="header__nav-link"
                 to="projects"
                 onClick={() => setIsMobileMenuOpen(false)}
                 {...animationOptions}
               >
                 Projects
-              </Link>
+              </ScrollToElement>
             </li>
             <li className="header__nav-item">
-              <Link
+              <ScrollToElement
                 className="header__nav-link"
                 to="experience"
                 onClick={() => setIsMobileMenuOpen(false)}
                 {...animationOptions}
               >
                 Experience
-              </Link>
+              </ScrollToElement>
             </li>
             <li className="header__nav-item">
-              <Link
+              <ScrollToElement
                 className="header__nav-link"
                 to="footer"
                 onClick={() => setIsMobileMenuOpen(false)}
                 {...animationOptions}
               >
                 Contact
-              </Link>
+              </ScrollToElement>
             </li>
           </ul>
         </nav>
@@ -85,3 +75,8 @@ export default function Header() {
     </header>
   );
 }
+
+PageHeader.propTypes = {
+  isMobileMenuOpen: PropTypes.bool,
+  setIsMobileMenuOpen: PropTypes.func,
+};
