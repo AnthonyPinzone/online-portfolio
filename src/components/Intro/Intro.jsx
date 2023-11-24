@@ -1,4 +1,5 @@
 import { Container } from '../../layout';
+import { ScrollToElement } from '../ScrollLinks/ScrollToElement';
 import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import profilePhoto from '../../assets/images/anthony-pinzone-profile-photo-cropped.jpg';
 import './Intro.scss';
@@ -18,9 +19,9 @@ export function Intro() {
           </p>
           <p className="intro-details__paragraph">
             I&apos;d love to connect,{' '}
-            <a className="intro__cta" href="">
+            <ScrollToElement className="intro__cta" to="footer">
               reach out today
-            </a>{' '}
+            </ScrollToElement>{' '}
             and let&apos;s build something awesome!
           </p>
           <ul className="intro-details__social">
