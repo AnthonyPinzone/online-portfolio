@@ -113,3 +113,26 @@ _My biggest goal in my career is always to be learning or trying something new. 
 - Project: Full Time RVer Blog
 - Project or Notion Page: Reusable RV checklist that's customizable
 - Learning: Dig into Eleventy more, focusing on its usability for non-developers vs. Wordpress
+
+## Project Resources and References
+
+Links to all of the documentation, articles, websites, and tutorials that helped me along the way. Huge shoutout to anyone who wrote or contributed to any of these. Hopefully someone else reading this finds value from them.
+
+### Articles & Tutorials
+
+- [How to implement reCAPTCHA in a React application](https://blog.logrocket.com/implement-recaptcha-react-application/) by David Omotayo
+- [React dynamic imports and route-centric code splitting guide](https://blog.logrocket.com/react-dynamic-imports-route-centric-code-splitting-guide/) by Lawrence Eagles
+- [Dynamic imports in React](https://medium.com/@shubham3480/dynamic-imports-in-react-3e3e7ad1d210) by Shubham Gupta
+
+### Documentation & Packages
+
+- `react` - https://react.dev/reference/react - _The best react reference comes straight from the source._
+- `prop-types` - https://www.npmjs.com/package/prop-types
+- `react-scroll` - https://github.com/fisshy/react-scroll
+- `react-icons` - https://react-icons.github.io/react-icons/
+- `emailjs` - https://www.emailjs.com/docs/tutorial/overview/
+- `reCAPTCHA v3` - https://developers.google.com/recaptcha/docs/v3
+
+- `react-google-recaptcha` - https://www.npmjs.com/package/react-google-recaptcha
+- `validator` - https://www.npmjs.com/package/validator
+- `react-bootstrap` - https://react-bootstrap.netlify.app/docs/ - _I've been using this library here and there as inspiration, I've not used bootstrap on this particular site._
