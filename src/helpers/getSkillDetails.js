@@ -37,9 +37,9 @@ import {
   FaLocationDot,
   FaPenToSquare,
   FaPeopleGroup,
-  FaRegObjectGroup
-} from "react-icons/fa6";
-import { GoChecklist } from "react-icons/go";
+  FaRegObjectGroup,
+} from 'react-icons/fa6';
+import { GoChecklist } from 'react-icons/go';
 import { SiAdobe, SiExpress, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 
 const skillDetailsMap = {
@@ -291,7 +291,7 @@ const skillDetailsMap = {
   },
 };
 
-export default function getSkillDetails(skill) {
+export function getSkillDetails(skill) {
   const normalizedSkill = skill.toLowerCase();
   return skillDetailsMap[normalizedSkill] || null;
 }

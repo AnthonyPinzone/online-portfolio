@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import getSkillDetails from '../../helpers/getSkillDetails';
+import { getSkillDetails } from '../../helpers';
 import './SkillIcon.scss';
 
 export function SkillIcon({ skill, ...rest }) {
