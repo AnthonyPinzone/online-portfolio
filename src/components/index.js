@@ -1,4 +1,5 @@
 // Reusable Components
+export { Alert } from './Alert/Alert';
 export { DarkModeToggle } from './DarkModeToggle/DarkModeToggle';
 export { SkillIcon } from './SkillIcon/SkillIcon';
 export { ScrollToElement } from './ScrollLinks/ScrollToElement';

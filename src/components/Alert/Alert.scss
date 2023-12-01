@@ -1,0 +1,44 @@
+.alert {
+  background-color: var(--white-100);
+  border-radius: var(--border-radius-small);
+  color: var(--black-100);
+  padding: 1rem;
+  position: relative;
+
+  &--success {
+    background-color: var(--secondary-green);
+    color: var(--white-100);
+  }
+
+  &--error {
+    background-color: var(--secondary-red);
+    color: var(--white-100);
+  }
+
+  &__messages-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__dismiss-button {
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-circle);
+    color: var(--white-100);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    &:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:focus-visible:not(:disabled) {
+      background-color: transparent;
+      border-color: var(--white-100);
+    }
+  }
+}
