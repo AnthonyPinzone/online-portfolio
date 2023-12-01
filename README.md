@@ -32,7 +32,7 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 - [ ] Reusable Components
 
   - [x] SkillsIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
-  - [ ] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
+  - [x] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
   - [ ] _More to come..._
 
 - [x] Navigation
@@ -80,11 +80,11 @@ Follow along on this sites journey via the checklist below, and if you're lookin
   - [ ] Gather testimonials from LinkedIn, former coworkers, and current students
   - [ ] Add testimonial content to the data file
 
-- [ ] Footer
+- [x] Footer
 
   - [x] Make the footer responsive
-  - [ ] Hook up all the footer navigation links
-  - [ ] Hook up the contact form to send an email using `emailjs`
+  - [x] Hook up all the footer navigation links
+  - [x] Hook up the contact form to send an email using `emailjs`
 
 - [ ] Final Walkthrough
   - [ ] Spelling is correct throughout and grammar is on point
