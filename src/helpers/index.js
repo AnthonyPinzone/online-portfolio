@@ -1,0 +1,1 @@
+export { getSkillDetails } from './getSkillDetails';

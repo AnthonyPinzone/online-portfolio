@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Container } from '../Container/Container';
-import { ScrollToElement } from '../../components/';
-import { BsArrowUpRight, BsFillSendFill, BsPersonVcard } from 'react-icons/bs';
+import { ContactForm, ScrollToElement } from '../../components/';
+import { BsArrowUpRight, BsPersonVcard } from 'react-icons/bs';
 import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { RiComputerLine } from 'react-icons/ri';
 import resumeLink from '../../assets/docs/Anthony-Pinzone_Frontend-Developer_Resume_2023.pdf';
@@ -88,30 +88,7 @@ export default function PageFooter() {
             form, I&apos;m always up for a conversation.
           </p>
         </div>
-        <form className="footer__contact-form">
-          <h5>Let&apos;s Connect!</h5>
-          <div className="form-field">
-            <label htmlFor="name">What&apos;s your name?</label>
-            <input type="text" name="name" id="name" placeholder="Name" />
-          </div>
-          <div className="form-field">
-            <label htmlFor="email">How can I reach you?</label>
-            <input type="email" name="email" id="email" placeholder="Email" />
-          </div>
-          <div className="form-field">
-            <label htmlFor="message">What would you like to ask or say?</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="5"
-              placeholder="Message"
-            ></textarea>
-          </div>
-          <button type="submit" className="button button--yellow">
-            Send Message <BsFillSendFill />
-          </button>
-        </form>
+        <ContactForm />
       </Container>
     </footer>
   );

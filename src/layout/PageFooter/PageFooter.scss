@@ -3,9 +3,9 @@
 .footer {
   background: var(--primary-blue);
   background: linear-gradient(
-    179deg,
-    var(--white-100) calc(75px),
-    var(--primary-blue) calc(77px)
+    178deg,
+    var(--white-100) calc(125px),
+    var(--primary-blue) calc(127px)
   );
   color: var(--white-100);
 
@@ -14,7 +14,7 @@
     gap: 2rem 4rem;
     grid-template-columns: 200px repeat(2, 1fr);
     grid-template-areas: 'links outro form';
-    padding-top: 100px;
+    padding-top: 150px;
 
     @media (max-width: $breakpoint-laptop) {
       grid-template-columns: 200px 1fr;
@@ -52,21 +52,6 @@
 
     @media (max-width: $breakpoint-laptop) {
       font-size: var(--large-font-size);
-    }
-  }
-
-  &__contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    grid-area: form;
-
-    h5 {
-      margin: 0;
-    }
-
-    button {
-      align-self: flex-end;
     }
   }
 
