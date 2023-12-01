@@ -31,8 +31,11 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 
 - [ ] Reusable Components
 
-  - [x] SkillsIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
+  - [x] SkillIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
   - [x] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
+  - [x] Alert: A pop-in that's themed green for 'success' or red for 'error'; handles messaging
+  - [x] DynamicIcon: Dynamically fetches icons from the react-icon library via the provided library and icon name
+  - [x] Input: Handles several different input types and ensures proper structure label + input structure
   - [ ] _More to come..._
 
 - [x] Navigation
