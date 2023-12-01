@@ -78,9 +78,9 @@ button {
   padding: 0;
   transition: var(--transition-duration-minimal) linear;
 
-  &:focus,
-  &:focus-visible,
-  &:hover {
+  &:focus:not(:disabled),
+  &:focus-visible:not(:disabled),
+  &:hover:not(:disabled) {
     background-color: var(--white-200);
   }
 
@@ -100,9 +100,9 @@ button {
     color: var(--primary-blue);
     padding: 0.5rem 1rem;
 
-    &:focus,
-    &:focus-visible,
-    &:hover {
+    &:focus:not(:disabled),
+    &:focus-visible:not(:disabled),
+    &:hover:not(:disabled) {
       background-color: var(--secondary-red);
       color: var(--white);
     }
