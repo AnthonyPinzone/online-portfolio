@@ -15,12 +15,12 @@ export function Projects() {
         <h2 className="projects__title">What I&apos;ve Worked On</h2>
         <ul className="projects__gallery">
           {data.projects?.map(
-            ({ name, description, skills, featuredImage, url }) => (
+            ({ name, description, skills, cover, slug }) => (
               <li className="projects__gallery-card" key={name}>
                 <figure className="projects__gallery-figure">
                   <img
                     className="projects__gallery-img"
-                    src={featuredImage}
+                    src={cover}
                     alt=""
                   />
                 </figure>
@@ -39,7 +39,7 @@ export function Projects() {
                         />
                       ))}
                     </div>
-                    <a className="projects__gallery-card-link" href={url}>
+                    <a className="projects__gallery-card-link" href={`/projects/${slug}`}>
                       View Project <BsArrowUpRight />
                     </a>
                   </footer>

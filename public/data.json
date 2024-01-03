@@ -2,51 +2,113 @@
   "projects": [
     {
       "name": "Corbion",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "react", "typescript"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": "https://www.corbion.com"
+      "slug": "corbion",
+      "description": "A large amount of data calls for a well planned user experience. A new design featuring a mega menu and a robust search feature allows users to quickly find the information they need.",
+      "skills": [
+        "html",
+        "sass",
+        "react",
+        "typescript"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": [
+        {
+          "title": "Mega Menu",
+          "description": "A large amount of data calls for a well planned user experience. A new design featuring a mega menu and a robust search feature allows users to quickly find the information they need.",
+          "skills": [
+            "html",
+            "sass",
+            "react",
+            "typescript"
+          ],
+          "image": "/src/assets/images/responsive-preview-placeholder.png"
+        },
+        {
+          "title": "Search",
+          "description": "A large amount of data calls for a well planned user experience. A new design featuring a mega menu and a robust search feature allows users to quickly find the information they need.",
+          "skills": [
+            "html",
+            "sass",
+            "react",
+            "typescript"
+          ],
+          "image": "/src/assets/images/responsive-preview-placeholder.png"
+        },
+        {
+          "title": "Responsive",
+          "description": "A large amount of data calls for a well planned user experience. A new design featuring a mega menu and a robust search feature allows users to quickly find the information they need.",
+          "skills": [
+            "html",
+            "sass",
+            "react",
+            "typescript"
+          ],
+          "image": "/src/assets/images/responsive-preview-placeholder.png"
+        }
+      ]
     },
     {
       "name": "Buckeye Broadband",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["sass", "react", "typescript"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": ""
+      "slug": "buckeye-broadband",
+      "description": "The next big leap for a growing internet provider, a brand new mobile app! A fresh design and a new feature set allows users to manage their account and services from the palm of their hand.",
+      "skills": [
+        "sass",
+        "react",
+        "typescript"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": []
     },
     {
       "name": "Your Hearing Network",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "react", "typescript"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": ""
+      "slug": "your-hearing-network",
+      "description": "The doctor-patient relationship can be a complicated one. A new portal feature allows doctors to easily manage their patients, appointments, equipment, and more.",
+      "skills": [
+        "html",
+        "sass",
+        "react",
+        "typescript"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": []
     },
     {
       "name": "American Society of Hematology",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "react", "typescript"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": ""
+      "slug": "american-society-of-hematology",
+      "description": "Gone are the days of the boring, static annual report. A new interactive experience allows users to explore the data in a more engaging way.",
+      "skills": [
+        "html",
+        "sass",
+        "react",
+        "typescript"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": []
     },
     {
       "name": "Cablivi Visopedia",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "react"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": ""
+      "slug": "cablivi-visopedia",
+      "description": "An exciting new drug calls for an exciting new way to learn about it. This interactive touch screen display allows users to explore the drug's benefits without the need for a sales rep.",
+      "skills": [
+        "html",
+        "sass",
+        "react"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": []
     },
     {
       "name": "CommunityPass",
-      "description": "Lorem ipsum dolor sit amet, elit laborum cupidatat velit laboris laborum do aliqua magna ullamco veniam.",
-      "skills": ["html", "sass", "javascript", "jquery"],
-      "images": [],
-      "featuredImage": "/src/assets/images/responsive-preview-placeholder.png",
-      "url": ""
+      "slug": "community-pass",
+      "description": "Making recreation and school management easy with this completely redesigned catalog, allowing users to easily find and register for the programs they need.",
+      "skills": [
+        "html",
+        "sass",
+        "javascript",
+        "jquery"
+      ],
+      "cover": "/src/assets/images/responsive-preview-placeholder.png",
+      "features": []
     }
   ],
   "experience": [
