@@ -15,9 +15,11 @@ export function Input({
 }) {
   return (
     <div className={`form-field ${className}`}>
-      <div className="form-field__label">
-        <label htmlFor={id}>{label}</label>
-      </div>
+      {label && (
+        <div className="form-field__label">
+          <label htmlFor={id}>{label}</label>
+        </div>
+      )}
       {type === 'textarea' ? (
         <textarea
           name={name}
