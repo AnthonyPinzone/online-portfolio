@@ -8,114 +8,114 @@ Follow along on this sites journey via the checklist below, and if you're lookin
 
 ## Portfolio MVP
 
-- [x] Project Setup
+-   [x] Project Setup
 
-  - [x] Choose a stack for the 2023 site update
-  - [x] Get a new branch started for the 2023 site update
-  - [x] Install the chosen stack on the new branch
-  - [x] Setup linting and tooling (ESLint, Prettier, SASS, etc)
-  - [x] Setup some basic SASS functions, mixins and variables
+    -   [x] Choose a stack for the 2023 site update
+    -   [x] Get a new branch started for the 2023 site update
+    -   [x] Install the chosen stack on the new branch
+    -   [x] Setup linting and tooling (ESLint, Prettier, SASS, etc)
+    -   [x] Setup some basic SASS functions, mixins and variables
 
-- [x] Initial Design & Structure
+-   [x] Initial Design & Structure
 
-  - [x] Get the homepage implemented with plain HTML/CSS
-  - [x] Continue tweaking the design until you're happy with the entire page
-  - [x] Break down the initial implementation into components
+    -   [x] Get the homepage implemented with plain HTML/CSS
+    -   [x] Continue tweaking the design until you're happy with the entire page
+    -   [x] Break down the initial implementation into components
 
-- [ ] Global Features
+-   [ ] Global Features
 
-  - [x] Animations should be removed if `prefers-reduced-motion` is set to `reduce`
-  - [x] A simple JSON file should hold as much data as possible and be available to all components
-  - [x] Stub out a context for the future theming feature
-  - [ ] _More to come..._
+    -   [x] Animations should be removed if `prefers-reduced-motion` is set to `reduce`
+    -   [x] A simple JSON file should hold as much data as possible and be available to all components
+    -   [x] Stub out a context for the future theming feature
+    -   [ ] _More to come..._
 
-- [ ] Reusable Components
+-   [ ] Reusable Components
 
-  - [x] SkillIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
-  - [x] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
-  - [x] Alert: A pop-in that's themed green for 'success' or red for 'error'; handles messaging
-  - [x] DynamicIcon: Dynamically fetches icons from the react-icon library via the provided library and icon name
-  - [x] Input: Handles several different input types and ensures proper structure label + input structure
-  - [ ] _More to come..._
+    -   [x] SkillIcon: `Figure` displaying an icon only by default, shows `figcaption` on hover
+    -   [x] ScrollingLink: A link that smooth scrolls to the appropriate section on the site
+    -   [x] Alert: A pop-in that's themed green for 'success' or red for 'error'; handles messaging
+    -   [x] DynamicIcon: Dynamically fetches icons from the react-icon library via the provided library and icon name
+    -   [x] Input: Handles several different input types and ensures proper structure label + input structure
+    -   [ ] _More to come..._
 
-- [x] Navigation
+-   [x] Navigation
 
-  - [x] Make the navbar responsive
-  - [x] Navigation links should smooth scroll to the appropriate section
-    - [x] On mobile, close the panel first, then scroll
-  - [x] Implement the mobile menu functionality
-  - [x] Clicking the logo should bring the user to the top of the page
+    -   [x] Make the navbar responsive
+    -   [x] Navigation links should smooth scroll to the appropriate section
+        -   [x] On mobile, close the panel first, then scroll
+    -   [x] Implement the mobile menu functionality
+    -   [x] Clicking the logo should bring the user to the top of the page
 
-- [x] Hero
+-   [x] Hero
 
-  - [x] Make the hero responsive
-  - [x] Find a good image to use
-  - [x] Determine the content
-  - [x] Add quick-access links for LinkedIn, Github and CodePen
+    -   [x] Make the hero responsive
+    -   [x] Find a good image to use
+    -   [x] Determine the content
+    -   [x] Add quick-access links for LinkedIn, Github and CodePen
 
-- [ ] Projects
+-   [ ] Projects
 
-  - [x] Make the projects section responsive
-  - [ ] Add Project Summaries
-  - [ ] Add Project Images
-  - [ ] View Project links should expand the chosen project into a modal like component with the following info:
-    - [ ] Problem statement
-    - [ ] Solution statement
-    - [ ] Developer insights (define what this looks like)
-    - [ ] Skills / Techologies / Languages used
-    - [ ] HD imagery (if available)
+    -   [x] Make the projects section responsive
+    -   [ ] Add Project Summaries
+    -   [ ] Add Project Images
+    -   [ ] View Project links should open a project details screen with an array of features, each including the following information:
+        -   [ ] Feature Name
+        -   [ ] Feature Description
+        -   [ ] Feature Image
+        -   [ ] Developer insights (challenges, lessons learned, etc)
+        -   [ ] Skills / Techologies / Languages used
 
-- [x] Experiences
+-   [x] Experiences
 
-  - [x] Make the experience section responsive
-  - [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
-  - [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
-  - [x] Add skills icons to the experience cards
-    - [x] Find icons for soft skills as part of this task
-  - [x] Add experiences content
+    -   [x] Make the experience section responsive
+    -   [x] Setup horizontal scrolling in the experience section with CSS snapping functionality
+    -   [x] Remove the next and previous buttons for now, make each card tabbable for accessibility
+    -   [x] Add skills icons to the experience cards
+        -   [x] Find icons for soft skills as part of this task
+    -   [x] Add experiences content
 
-- [ ] Testimonials
+-   [ ] Testimonials
 
-  - [ ] Add new section for testimonials
-  - [ ] Setup the HTML structure: `figure` and `figcaption` with image
-  - [ ] Style the component: large quote, smaller name, circle image
-  - [ ] Make the testimonial section responsive
-  - [ ] Gather testimonials from LinkedIn, former coworkers, and current students
-  - [ ] Add testimonial content to the data file
+    -   [ ] Add new section for testimonials
+    -   [ ] Setup the HTML structure: `figure` and `figcaption` with image
+    -   [ ] Style the component: large quote, smaller name, circle image
+    -   [ ] Make the testimonial section responsive
+    -   [ ] Gather testimonials from LinkedIn, former coworkers, and current students
+    -   [ ] Add testimonial content to the data file
 
-- [x] Footer
+-   [x] Footer
 
-  - [x] Make the footer responsive
-  - [x] Hook up all the footer navigation links
-  - [x] Hook up the contact form to send an email using `emailjs`
+    -   [x] Make the footer responsive
+    -   [x] Hook up all the footer navigation links
+    -   [x] Hook up the contact form to send an email using `emailjs`
 
-- [ ] Final Walkthrough
-  - [ ] Spelling is correct throughout and grammar is on point
-  - [ ] All links go where they're expected to go
-  - [ ] All call to actions work as expected
-  - [ ] All text is legible at all breakpoints
-  - [ ] Passes all accessibility checks, shoot for AAA result, ok with AA for first pass
-  - [ ] Do a speed test to see if anything obvious needs to be optimized
+-   [ ] Final Walkthrough
+    -   [ ] Spelling is correct throughout and grammar is on point
+    -   [ ] All links go where they're expected to go
+    -   [ ] All call to actions work as expected
+    -   [ ] All text is legible at all breakpoints
+    -   [ ] Passes all accessibility checks, shoot for AAA result, ok with AA for first pass
+    -   [ ] Do a speed test to see if anything obvious needs to be optimized
 
 ## Portfolio Future
 
-- [ ] AAA accessibility compliance
-- [ ] Dark Mode
-- [ ] Theme Switcher w/ multiple color palettes
-- [ ] Better animation for the experience timeline (GSAP? Framer?)
-- [ ] Individual "pages" for the project pages instead of a modal (do some research here to see which is a better user experience first)
-- [ ] Replace PropTypes with TypeScript
-- [ ] Code Snippets feature w/ Storybook: _The goal here is to share commonly used code snippets for HTML, CSS, JavaScript, React and maybe other languages aimed at beginner devs. There'd be a tutorial aspect to this as well._
-- [ ] Tutorial implementation: _This could be either an advanced feature of the Code Snippets storybook instance or a completely separate section of the site in more of a blog format._
+-   [ ] AAA accessibility compliance
+-   [ ] Dark Mode
+-   [ ] Theme Switcher w/ multiple color palettes
+-   [ ] Better animation for the experience timeline (GSAP? Framer?)
+-   [ ] Individual "pages" for the project pages instead of a modal (do some research here to see which is a better user experience first)
+-   [ ] Replace PropTypes with TypeScript
+-   [ ] Code Snippets feature w/ Storybook: _The goal here is to share commonly used code snippets for HTML, CSS, JavaScript, React and maybe other languages aimed at beginner devs. There'd be a tutorial aspect to this as well._
+-   [ ] Tutorial implementation: _This could be either an advanced feature of the Code Snippets storybook instance or a completely separate section of the site in more of a blog format._
 
 ## Other Ideas for Projects & Learning
 
 _My biggest goal in my career is always to be learning or trying something new. Here are a few ideas for projects I have that would allow me to start expanding my knowledge into the Full Stack realm instead of solely Frontend focused._
 
-- Project: Job application tracking tool
-- Project: Full Time RVer Blog
-- Project or Notion Page: Reusable RV checklist that's customizable
-- Learning: Dig into Eleventy more, focusing on its usability for non-developers vs. Wordpress
+-   Project: Job application tracking tool
+-   Project: Full Time RVer Blog
+-   Project or Notion Page: Reusable RV checklist that's customizable
+-   Learning: Dig into Eleventy more, focusing on its usability for non-developers vs. Wordpress
 
 ## Project Resources and References
 
@@ -123,19 +123,21 @@ Links to all of the documentation, articles, websites, and tutorials that helped
 
 ### Articles & Tutorials
 
-- [How to implement reCAPTCHA in a React application](https://blog.logrocket.com/implement-recaptcha-react-application/) by David Omotayo
-- [React dynamic imports and route-centric code splitting guide](https://blog.logrocket.com/react-dynamic-imports-route-centric-code-splitting-guide/) by Lawrence Eagles
-- [Dynamic imports in React](https://medium.com/@shubham3480/dynamic-imports-in-react-3e3e7ad1d210) by Shubham Gupta
+-   [How to implement reCAPTCHA in a React application](https://blog.logrocket.com/implement-recaptcha-react-application/) by David Omotayo
+-   [React dynamic imports and route-centric code splitting guide](https://blog.logrocket.com/react-dynamic-imports-route-centric-code-splitting-guide/) by Lawrence Eagles
+-   [Dynamic imports in React](https://medium.com/@shubham3480/dynamic-imports-in-react-3e3e7ad1d210) by Shubham Gupta
+-   [Reusing Logic with Custom Hooks](https://react.dev/learn/reusing-logic-with-custom-hooks) by React
 
 ### Documentation & Packages
 
-- `react` - https://react.dev/reference/react - _The best react reference comes straight from the source._
-- `prop-types` - https://www.npmjs.com/package/prop-types
-- `react-scroll` - https://github.com/fisshy/react-scroll
-- `react-icons` - https://react-icons.github.io/react-icons/
-- `emailjs` - https://www.emailjs.com/docs/tutorial/overview/
-- `reCAPTCHA v3` - https://developers.google.com/recaptcha/docs/v3
+-   `react` - https://react.dev/reference/react - _The best react reference comes straight from the source._
+-   `prop-types` - https://www.npmjs.com/package/prop-types
+-   `react-scroll` - https://github.com/fisshy/react-scroll
+-   `react-icons` - https://react-icons.github.io/react-icons/
+-   `emailjs` - https://www.emailjs.com/docs/tutorial/overview/
+-   `reCAPTCHA v3` - https://developers.google.com/recaptcha/docs/v3
 
-- `react-google-recaptcha` - https://www.npmjs.com/package/react-google-recaptcha
-- `validator` - https://www.npmjs.com/package/validator
-- `react-bootstrap` - https://react-bootstrap.netlify.app/docs/ - _I've been using this library here and there as inspiration, I've not used bootstrap on this particular site._
+-   `react-google-recaptcha` - https://www.npmjs.com/package/react-google-recaptcha
+-   `validator` - https://www.npmjs.com/package/validator
+-   `react-bootstrap` - https://react-bootstrap.netlify.app/docs/ - _I've been using this library here and there as inspiration, I've not used bootstrap on this particular site._
+-   `react-router` - https://reactrouter.com/en/main
