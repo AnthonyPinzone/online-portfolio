@@ -42,13 +42,13 @@
     &-card-skills {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 0.15rem;
       font-size: var(--largest-font-size);
 
       svg {
         cursor: pointer;
         filter: grayscale(1);
-        transition: var(--transition-duration-minimal) linear;
 
         &:focus,
         &:focus-visible,
@@ -72,6 +72,7 @@
       padding: 0.5rem 1rem;
       text-decoration: none;
       transition: var(--transition-duration-minimal) linear;
+      white-space: nowrap;
 
       &:focus,
       &:focus-visible,

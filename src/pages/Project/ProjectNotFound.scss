@@ -1,0 +1,56 @@
+.project-not-found-page {
+    background-color: var(--white-100);
+    text-align: center;
+
+    .container {
+        padding-top: 5rem;
+    }
+
+    p {
+        margin: 1rem 0 2rem;
+    }
+
+    .button-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .button-separator {
+        color: var(--black-400);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .fake-button,
+    .button {
+        background-color: var(--white);
+        border-radius: var(--border-radius-medium);
+        color: var(--secondary-red);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        text-decoration: none;
+
+        svg {
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+
+    .fake-button {
+        color: var(--black-300);
+    }
+
+    .button {
+        &:focus:not(:disabled),
+        &:focus-visible:not(:disabled),
+        &:hover:not(:disabled) {
+            background-color: var(--secondary-red);
+            color: var(--white);
+        }
+    }
+}

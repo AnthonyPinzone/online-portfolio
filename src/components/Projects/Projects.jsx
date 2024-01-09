@@ -1,21 +1,22 @@
 import React from 'react';
-import { DataContext } from '../../common/contexts';
+import { Link } from 'react-router-dom';
+import useProjects from '../../hooks/useProjects';
 import { Container } from '../../layout';
 import { SkillIcon } from '../';
 import { BsArrowUpRight } from 'react-icons/bs';
 import './Projects.scss';
 
 export function Projects() {
-  const data = React.useContext(DataContext);
-  if (!data) return null;
+  const projects = useProjects();
+  if (!projects) return null;
 
   return (
     <section id="projects" className="projects">
       <Container className="projects__container">
         <h2 className="projects__title">What I&apos;ve Worked On</h2>
         <ul className="projects__gallery">
-          {data.projects?.map(
-            ({ name, description, skills, cover, slug }) => (
+          {projects?.map(
+            ({ name, hook, skills, cover, slug }) => (
               <li className="projects__gallery-card" key={name}>
                 <figure className="projects__gallery-figure">
                   <img
@@ -27,11 +28,11 @@ export function Projects() {
                 <div className="projects__gallery-card-details">
                   <h3 className="projects__gallery-card-title">{name}</h3>
                   <p className="projects__gallery-card-description">
-                    {description}
+                    {hook}
                   </p>
                   <footer className="projects__gallery-card-footer">
                     <div className="projects__gallery-card-skills">
-                      {skills.map((skill) => (
+                      {skills.featured?.map((skill) => (
                         <SkillIcon
                           className="projects__gallery-card-skill"
                           key={skill}
@@ -39,9 +40,9 @@ export function Projects() {
                         />
                       ))}
                     </div>
-                    <a className="projects__gallery-card-link" href={`/projects/${slug}`}>
+                    <Link className="projects__gallery-card-link" to={`/projects/${slug}`}>
                       View Project <BsArrowUpRight />
-                    </a>
+                    </Link>
                   </footer>
                 </div>
               </li>
