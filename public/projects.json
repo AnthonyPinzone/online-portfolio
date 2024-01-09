@@ -1,0 +1,113 @@
+[
+    {
+        "name": "Pursuit",
+        "slug": "pursuit",
+        "hook": "Guided developers through the PERN stack, enhancing the curriculum with detailed study guides and offering hands-on practice via carefully crafted CSS mockups.",
+        "skills": {
+            "featured": [
+                "teaching",
+                "communication",
+                "debugging",
+                "mentorship",
+                "leadership"
+            ],
+            "technical": [
+                "git",
+                "html",
+                "sass",
+                "javascript",
+                "react",
+                "express",
+                "postgres",
+                "testing"
+            ],
+            "soft": [
+                "teaching",
+                "communication",
+                "debugging",
+                "mentorship",
+                "leadership",
+                "collaboration"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png"
+    },
+    {
+        "name": "Corbion",
+        "slug": "corbion",
+        "hook": "Streamlined data access through a revamped design, featuring a mega menu and robust search capabilities, resulting in a seamless user experience for quick information retrieval.",
+        "skills": {
+            "featured": [
+                "git",
+                "sass",
+                "javascript",
+                "react",
+                "typescript"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png"
+    },
+    {
+        "name": "Buckeye Broadband",
+        "slug": "buckeye-broadband",
+        "hook": "Engineered a sleek mobile app with enhanced features, enabling users to effortlessly manage their accounts and services directly from their mobile devices.",
+        "skills": {
+            "featured": [
+                "git",
+                "sass",
+                "javascript",
+                "react-native",
+                "typescript"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png"
+    },
+    {
+        "name": "Your Hearing Network",
+        "slug": "your-hearing-network",
+        "hook": "Led the implementation of a new portal feature, empowering doctors to efficiently manage patients, appointments, equipment, and more, streamlining the complex doctor-patient relationship.",
+        "skills": {
+            "featured": [
+                "git",
+                "sass",
+                "javascript",
+                "react",
+                "typescript"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png",
+        "features": []
+    },
+    {
+        "name": "Cablivi Visopedia",
+        "slug": "cablivi-visopedia",
+        "hook": "Created an interactive touch screen display for an exciting new drug, allowing users to comprehensively explore Cablivi's benefits without the need for a sales representative.",
+        "skills": {
+            "featured": [
+                "html",
+                "sass",
+                "javascript",
+                "react",
+                "next"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png",
+        "features": []
+    },
+    {
+        "name": "CommunityPass",
+        "slug": "community-pass",
+        "hook": "Redesigned the catalog, simplifying recreation and school management, ensuring an efficient and user-friendly platform for visitors to find and register for various programs, enhancing the overall user experience.",
+        "skills": {
+            "featured": [
+                "html",
+                "sass",
+                "javascript",
+                "jquery",
+                "git"
+            ]
+        },
+        "cover": "/src/assets/images/responsive-preview-placeholder.png",
+        "features": []
+    }
+]
