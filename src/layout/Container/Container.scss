@@ -1,28 +1,33 @@
-@use '../../assets/sass/variables' as *;
+// Container Sizes
+$container-phone: 100%;
+$container-tablet: 600px;
+$container-laptop: 800px;
+$container-desktop: 1000px;
+$container-widescreen: 1200px;
 
 .container {
-  --container-width: #{$container-widescreen};
-  --container-vertical-padding: 40px;
-  --container-horizontal-padding: 20px;
+    --container-width: #{$container-widescreen};
+    --container-vertical-padding: 40px;
+    --container-horizontal-padding: 20px;
 
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: var(--container-vertical-padding) var(--container-horizontal-padding);
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--container-vertical-padding) var(--container-horizontal-padding);
 
-  @media (max-width: $breakpoint-desktop) {
-    --container-width: #{$container-desktop};
-  }
+    @media (max-width: var(--breakpoint-desktop)) {
+        --container-width: #{$container-desktop};
+    }
 
-  @media (max-width: $breakpoint-laptop) {
-    --container-width: #{$container-laptop};
-  }
+    @media (max-width: var(--breakpoint-laptop)) {
+        --container-width: #{$container-laptop};
+    }
 
-  @media (max-width: $breakpoint-tablet) {
-    --container-width: #{$container-tablet};
-    --container-vertical-padding: 20px;
-  }
+    @media (max-width: var(--breakpoint-tablet)) {
+        --container-width: #{$container-tablet};
+        --container-vertical-padding: 20px;
+    }
 
-  @media (max-width: $breakpoint-phone) {
-    --container-width: #{$container-phone};
-  }
+    @media (max-width: var(--breakpoint-phone)) {
+        --container-width: #{$container-phone};
+    }
 }
