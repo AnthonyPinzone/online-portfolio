@@ -1,12 +1,26 @@
 import React from 'react';
-import { DataContext } from '../../common/contexts';
 import { Container } from '../../layout';
 import { SkillIcon } from '../';
 import './Experience.scss';
 
 export function Experience() {
-  const data = React.useContext(DataContext);
-  if (!data) return null;
+  const [experience, setExperience] = React.useState(null);
+
+  const getExperience = async () => {
+    try {
+      const response = await fetch('/experience.json');
+      const json = await response.json();
+      setExperience(json);
+    } catch (error) {
+      console.log('There was an issue fetching the experience.', error);
+    }
+  };
+
+  React.useEffect(() => {
+    getExperience();
+  }, []);
+
+  if (!experience) return null;
 
   return (
     <section id="experience" className="experience">
@@ -15,7 +29,7 @@ export function Experience() {
           <h2 className="experience__title">Where I&apos;ve Been</h2>
         </header>
         <div className="experience__timeline" tabIndex={-1}>
-          {data.experience?.map(
+          {experience?.map(
             ({
               company,
               position,
