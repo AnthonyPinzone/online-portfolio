@@ -79,6 +79,12 @@ const skillDetailsMap = {
     type: 'technical',
     props: {},
   },
+  "react-native": {
+    title: 'React Native',
+    icon: BiLogoReact,
+    type: 'technical',
+    props: {},
+  },
   typescript: {
     title: 'Typescript',
     icon: BiLogoTypescript,
