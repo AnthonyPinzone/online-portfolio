@@ -1,33 +1,38 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Container } from '../Container/Container';
-import { ScrollToElement, ScrollToPosition } from '../../components/';
+
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
+
+import { Container } from '../Container/Container';
 import './PageHeader.scss';
 
 export default function PageHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { pathname } = useLocation();
 
   const animationOptions = {
     delay: isMobileMenuOpen ? 300 : 0,
-    offset: -76,
   };
 
   return (
-    <header className="header">
-      <Container className="header__container">
-        <h1 className="header__title">
-          <ScrollToPosition
-            position={1000}
+    <header id="page-header" className="page-header">
+      <Container className="page-header__container">
+        <h1 className="page-header__title">
+          <Link
+            className="page-header__title-link"
+            to="/"
             onClick={() => setIsMobileMenuOpen(false)}
+            state={{ scrollTarget: 'top', animationOptions }}
+            preventScrollReset={pathname === '/'}
           >
             Anthony Pinzone
-          </ScrollToPosition>
+          </Link>
         </h1>
-        <nav className="header__nav">
+        <nav className="page-header__nav">
           <button
-            className="header__nav-button"
+            className="page-header__nav-button"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             aria-label={
               isMobileMenuOpen
@@ -38,39 +43,41 @@ export default function PageHeader() {
             {isMobileMenuOpen ? <MdClose /> : <GiHamburgerMenu />}
           </button>
           <ul
-            className={`header__nav-list ${
-              isMobileMenuOpen ? 'header__nav-list--open' : ''
-            }`}
+            className={`page-header__nav-list ${isMobileMenuOpen ? 'page-header__nav-list--open' : ''
+              }`}
           >
-            <li className="header__nav-item">
-              <ScrollToElement
-                className="header__nav-link"
-                to="projects"
+            <li className="page-header__nav-item">
+              <Link
+                className="page-header__nav-link"
+                to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                {...animationOptions}
+                state={{ scrollTarget: 'projects', animationOptions }}
+                preventScrollReset={pathname === '/'}
               >
                 Projects
-              </ScrollToElement>
+              </Link>
             </li>
-            <li className="header__nav-item">
-              <ScrollToElement
-                className="header__nav-link"
-                to="experience"
+            <li className="page-header__nav-item">
+              <Link
+                className="page-header__nav-link"
+                to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                {...animationOptions}
+                state={{ scrollTarget: 'experience', animationOptions }}
+                preventScrollReset={pathname === '/'}
               >
                 Experience
-              </ScrollToElement>
+              </Link>
             </li>
-            <li className="header__nav-item">
-              <ScrollToElement
-                className="header__nav-link"
-                to="footer"
+            <li className="page-header__nav-item">
+              <Link
+                className="page-header__nav-link"
+                to="/"
                 onClick={() => setIsMobileMenuOpen(false)}
-                {...animationOptions}
+                state={{ scrollTarget: 'footer', animationOptions }}
+                preventScrollReset={pathname === '/'}
               >
                 Contact
-              </ScrollToElement>
+              </Link>
             </li>
           </ul>
         </nav>
