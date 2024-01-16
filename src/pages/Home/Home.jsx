@@ -1,8 +1,10 @@
 import { useContext, useEffect } from 'react';
 import { useLocation, useNavigationType } from 'react-router-dom';
 import { animateScroll, scroller } from 'react-scroll';
+import { FaCodepen, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { PrefersReducedMotionContext } from '../../common/contexts';
-import { Experience, Intro, Projects } from '../../components';
+import { Experience, Hero, Projects, ScrollToElement } from '../../components';
+import profilePhoto from '../../assets/images/anthony-pinzone-profile-photo-cropped.jpg';
 
 export default function HomePage() {
     const { prefersReducedMotion } = useContext(PrefersReducedMotionContext);
@@ -34,7 +36,46 @@ export default function HomePage() {
 
     return (
         <div className="home-page">
-            <Intro />
+            <Hero
+                className="intro"
+                image={{ src: profilePhoto, alt: "Anthony standing on a boat overlooking the Hudson River in New York City", hasShadow: true }}
+                ctas={[
+                    {
+                        icon: <FaLinkedin />,
+                        label: "LinkedIn",
+                        to: "https://www.linkedin.com/in/anthonyjpinzone/",
+                        newTab: true,
+                    },
+                    {
+                        icon: <FaGithub />,
+                        label: "Github",
+                        to: "https://github.com/AnthonyPinzone",
+                        newTab: true,
+                    },
+                    {
+                        icon: <FaCodepen />,
+                        label: "CodePen",
+                        to: "https://codepen.io/AnthonyPinzone",
+                        newTab: true,
+                    },
+                ]}
+            >
+                <h1>Hi! I&apos;m Anthony</h1>
+                <p>
+                    I&apos;m a Frontend Developer driven by the challenge of
+                    transforming captivating designs into dynamic websites. Beyond the{' '}
+                    <span className="mono">pixels</span> and{' '}
+                    <span className="mono">breakpoints</span>, my passion extends to
+                    mentoring aspiring developers on their coding journey.
+                </p>
+                <p>
+                    I&apos;d love to connect,{' '}
+                    <ScrollToElement className="cta-link" to="footer">
+                        reach out today
+                    </ScrollToElement>{' '}
+                    and let&apos;s build something awesome!
+                </p>
+            </Hero>
             <Projects />
             <Experience />
         </div>
