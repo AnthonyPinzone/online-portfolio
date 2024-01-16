@@ -1,3 +1,5 @@
+@use '../../assets/sass/variables' as *;
+
 .footer {
     background: var(--primary-blue);
     background: linear-gradient(178deg, var(--white-100) calc(125px), var(--primary-blue) calc(127px));
