@@ -2,7 +2,8 @@
     {
         "name": "Pursuit",
         "slug": "pursuit",
-        "hook": "Guided developers through the PERN stack, enhancing the curriculum with detailed study guides and offering hands-on practice via carefully crafted CSS mockups.",
+        "hook": "Guided developers through the PERN stack with detailed study guides, custom project designs, and curriculum extending video tutorials.",
+        "description": "During my time at Pursuit, I played a vital role in guiding developers through the intricacies of the PERN stack. Crafting study guides and project designs to simplify complex concepts and introducing video tutorials for a richer curriculum in Git, HTML, SASS, JavaScript, React, Express, Postgres, and testing. Beyond technical skills, I emphasized the cultivation of soft skills—communication, debugging, mentorship, leadership, and collaboration—contributing to the development of well-rounded professionals.",
         "skills": {
             "featured": [
                 "teaching",
@@ -30,7 +31,20 @@
                 "collaboration"
             ]
         },
-        "cover": "/src/assets/images/responsive-preview-placeholder.png"
+        "cover": "/src/assets/images/responsive-preview-placeholder.png",
+        "features": [
+            {
+                "title": "Enter a Title Here",
+                "description": "Lorem ipsum dolor sit amet",
+                "images": [
+                    "/src/assets/images/responsive-preview-placeholder.png"
+                ],
+                "insights": [
+                    "Lorem ipsum dolor sit amet",
+                    "Lorem ipsum dolor sit amet"
+                ]
+            }
+        ]
     },
     {
         "name": "Corbion",
