@@ -12,7 +12,7 @@ export function Experience() {
       const json = await response.json();
       setExperience(json);
     } catch (error) {
-      console.log('There was an issue fetching the experience.', error);
+      console.error('There was an issue fetching the experience.', error);
     }
   };
 

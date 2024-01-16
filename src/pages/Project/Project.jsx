@@ -4,7 +4,6 @@ import { Container } from '../../layout';
 import ProjectNotFound from './ProjectNotFound';
 import useProjects from '../../hooks/useProjects';
 import { Hero } from '../../components';
-import './Project.scss';
 
 export default function Project() {
     const { projectSlug } = useParams();
@@ -13,8 +12,6 @@ export default function Project() {
     if (!project) {
         return <ProjectNotFound projectSlug={projectSlug} />;
     }
-
-    console.log(project);
 
     return (
         <div className="project-page">

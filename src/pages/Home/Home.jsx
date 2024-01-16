@@ -37,7 +37,7 @@ export default function HomePage() {
     return (
         <div className="home-page">
             <Hero
-                className="intro"
+                className="home-page__hero"
                 image={{ src: profilePhoto, alt: "Anthony standing on a boat overlooking the Hudson River in New York City", hasShadow: true }}
                 ctas={[
                     {
