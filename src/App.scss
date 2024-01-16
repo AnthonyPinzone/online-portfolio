@@ -57,6 +57,21 @@ h6 {
 
 a {
     cursor: pointer;
+
+    &.cta-link {
+        color: var(--secondary-red);
+        font-family: var(--serif-font-family);
+        font-style: italic;
+        outline: 0;
+        text-decoration: none;
+        text-underline-offset: 2px;
+
+        &:focus,
+        &:focus-visible,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 p {
