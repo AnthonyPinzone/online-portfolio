@@ -22,22 +22,20 @@
     }
 
     &__title {
+        color: var(--black-100);
+        font-family: var(--serif-font-family);
         font-size: var(--logo-font-size);
         font-weight: 400;
         margin: 0;
+        text-decoration: none;
 
         @media (max-width: var(--breakpoint-phone)) {
             font-size: clamp(var(--default-font-size), 6.5vw, var(--logo-font-size));
         }
 
-        &-link {
-            color: var(--black-100);
-            text-decoration: none;
-
-            &:hover,
-            &:focus-visible {
-                text-decoration: underline;
-            }
+        &:hover,
+        &:focus-visible {
+            text-decoration: underline;
         }
     }
 

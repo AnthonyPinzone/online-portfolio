@@ -19,17 +19,17 @@ export default function PageHeader() {
   return (
     <header id="page-header" className="page-header">
       <Container className="page-header__container">
-        <h1 className="page-header__title">
-          <Link
-            className="page-header__title-link"
-            to="/"
-            onClick={() => setIsMobileMenuOpen(false)}
-            state={{ scrollTarget: 'top', animationOptions }}
-            preventScrollReset={pathname === '/'}
-          >
-            Anthony Pinzone
-          </Link>
-        </h1>
+
+        <Link
+          className="page-header__title"
+          to="/"
+          onClick={() => setIsMobileMenuOpen(false)}
+          state={{ scrollTarget: 'top', animationOptions }}
+          preventScrollReset={pathname === '/'}
+        >
+          Anthony Pinzone
+        </Link>
+
         <nav className="page-header__nav">
           <button
             className="page-header__nav-button"
