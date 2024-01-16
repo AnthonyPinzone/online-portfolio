@@ -17,7 +17,7 @@
                 'links form';
         }
 
-        @media (max-width: var(--breakpoint-tablet)) {
+        @media (max-width: $breakpoint-tablet) {
             grid-template-columns: 1fr;
             grid-template-areas:
                 'outro'
@@ -53,7 +53,7 @@
         grid-area: links;
 
         h5 {
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 margin-bottom: 2rem;
             }
         }
@@ -66,7 +66,7 @@
             margin: 0;
             padding: 0;
 
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 flex-direction: row;
                 flex-wrap: wrap;
                 gap: 2rem 0;
@@ -74,11 +74,11 @@
         }
 
         &-item {
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 flex-basis: calc(100% / 3);
             }
 
-            @media (max-width: var(--breakpoint-phone)) {
+            @media (max-width: $breakpoint-phone) {
                 flex-basis: 50%;
             }
         }

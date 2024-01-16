@@ -2,6 +2,69 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    --default-font-size: #{$default-font-size};
+    --small-font-size: #{$small-font-size};
+    --smaller-font-size: #{$smaller-font-size};
+    --smallest-font-size: #{$smallest-font-size};
+    --large-font-size: #{$large-font-size};
+    --larger-font-size: #{$larger-font-size};
+    --largest-font-size: #{$largest-font-size};
+    --logo-font-size: #{$logo-font-size};
+    --title-font-size: #{$title-font-size};
+    --heading-1-font-size: #{$heading-1-font-size};
+    --heading-2-font-size: #{$heading-2-font-size};
+    --heading-3-font-size: #{$heading-3-font-size};
+    --heading-4-font-size: #{$heading-4-font-size};
+    --heading-5-font-size: #{$heading-5-font-size};
+    --heading-6-font-size: #{$heading-6-font-size};
+
+    --default-line-height: 1.5;
+    --heading-line-height: 1.2;
+    --double-line-height: 2;
+
+    --border-radius-small: 5px;
+    --border-radius-medium: 10px;
+    --border-radius-large: 15px;
+    --border-radius-circle: 50%;
+
+    --sans-serif-font-family: 'Libre Franklin', sans-serif;
+    --serif-font-family: 'Libre Baskerville', serif;
+    --monospace-font-family: 'Fira Code', monospace;
+
+    --primary-yellow: #ffde59;
+    --primary-blue: #12263a;
+    --secondary-red: #a63446;
+    --secondary-blue: #009fb7;
+    --secondary-green: #136f63;
+
+    --white: #fff;
+    --white-100: #f8f9fa;
+    --white-200: #e9ecef;
+    --white-300: #dee2e6;
+    --white-400: #ced4da;
+    --white-500: #adb5bd;
+
+    --black: #000;
+    --black-100: #1a1a1a;
+    --black-200: #212529;
+    --black-300: #343a40;
+    --black-400: #495057;
+    --black-500: #6c757d;
+
+    --transition-duration-minimal: 0.25s;
+    --transition-duration-average: 0.5s;
+    --transition-duration-long: 1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --transition-duration-minimal: 0s;
+        --transition-duration-average: 0s;
+        --transition-duration-long: 0s;
+    }
+}
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;

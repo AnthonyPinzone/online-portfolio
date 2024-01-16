@@ -50,11 +50,11 @@
             scroll-snap-stop: always;
             transition: background-color var(--transition-duration-minimal) linear;
 
-            @media (max-width: var(--breakpoint-desktop)) {
+            @media (max-width: $breakpoint-desktop) {
                 flex-basis: 50%;
             }
 
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 flex-basis: 100%;
             }
 

@@ -1,3 +1,5 @@
+@use '../../assets/sass/variables' as *;
+
 .hero {
     --angle-starting-point: 80%;
     --gradient-starting-color: var(--primary-yellow);
@@ -10,15 +12,15 @@
     min-height: fit-content;
     padding-bottom: 80px;
 
-    @media (max-width: var(--breakpoint-desktop)) {
+    @media (max-width: $breakpoint-desktop) {
         --angle-starting-point: 85%;
     }
 
-    @media (max-width: var(--breakpoint-laptop)) {
+    @media (max-width: $breakpoint-laptop) {
         --angle-starting-point: 92%;
     }
 
-    @media (max-width: var(--breakpoint-tablet)) {
+    @media (max-width: $breakpoint-tablet) {
         --angle-starting-point: 96%;
     }
 
@@ -29,12 +31,12 @@
         grid-template-areas: 'photo details .';
         grid-template-columns: 4fr 6fr 2fr;
 
-        @media (max-width: var(--breakpoint-desktop)) {
+        @media (max-width: $breakpoint-desktop) {
             grid-template-areas: 'photo details';
             grid-template-columns: 4fr 8fr;
         }
 
-        @media (max-width: var(--breakpoint-tablet)) {
+        @media (max-width: $breakpoint-tablet) {
             grid-template-areas:
                 'photo'
                 'details';
@@ -47,7 +49,7 @@
         grid-area: photo;
         position: relative;
 
-        @media (max-width: var(--breakpoint-tablet)) {
+        @media (max-width: $breakpoint-tablet) {
             margin: 0 auto;
             width: clamp(250px, 300px, 100%);
         }
@@ -78,7 +80,7 @@
             font-size: var(--title-font-size);
             line-height: 1;
 
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 font-size: clamp(20px, 10vw, var(--title-font-size));
             }
         }
@@ -87,7 +89,7 @@
             font-size: var(--large-font-size);
             margin: 15px 0 0;
 
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 font-size: var(--larger-font-size);
                 margin: 25px 0 0 0;
             }
@@ -101,7 +103,7 @@
         margin: 25px 0 0 0;
         padding: 0;
 
-        @media (max-width: var(--breakpoint-tablet)) {
+        @media (max-width: $breakpoint-tablet) {
             flex-wrap: wrap;
         }
 
@@ -118,7 +120,7 @@
             text-decoration: none;
             transition: var(--transition-duration-minimal) linear;
 
-            @media (max-width: var(--breakpoint-tablet)) {
+            @media (max-width: $breakpoint-tablet) {
                 font-size: var(--default-font-size);
                 padding: 0.5rem 1rem;
             }

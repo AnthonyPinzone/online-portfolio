@@ -15,7 +15,6 @@ import Home from './pages/Home/Home';
 import Error from './pages/Error/Error';
 import Project from './pages/Project/Project';
 import ProjectNotFound from './pages/Project/ProjectNotFound';
-import useProjects from './hooks/useProjects';
 
 function App() {
   const [theme, setTheme] = useState('light');
